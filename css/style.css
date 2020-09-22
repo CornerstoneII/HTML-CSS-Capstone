@@ -210,3 +210,12 @@ input[type="text"] {
   margin-top:5px;
   letter-spacing:2px
 }
+
+.site-footer a {
+    color:#888888;
+}
+
+.site-footer a:hover {
+    color:#3366cc;
+    text-decoration:none;
+}
