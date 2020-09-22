@@ -194,3 +194,8 @@ input[type="text"] {
     font-size:15px;
     line-height:24px;
 }
+
+.site-footer hr {
+    border-top-color:#bbb;
+    opacity:0.5
+}
