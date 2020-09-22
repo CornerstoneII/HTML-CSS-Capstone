@@ -10,6 +10,10 @@
 
     <link rel="stylesheet" href="./css/style.css">
 
+    <!-- Flickity Carousel CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+    <!-- Font Awesome CDN -->
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
@@ -107,9 +111,10 @@
                 <i class='fas fa-tshirt pr-3' style='font-size:20px;'></i> <span>Fashion</span> (Skirts, Gowns, Pants, Shirts.)
             </div>
 
+            <!-- Carousel -->
             <div class="carousel-wrapper">
-                <div class="carousel">
-                        <div class="item1">
+                <div class="carousel cat-carousel" data-flickity='{ "pageDots": false, "freeScroll": true, "contain": true, "watchCSS": true }'>
+                        <div class="cat-carousel-cell item1">
                             <div class="card rounded-0">
                                 <img src="https://picsum.photos/seed/picsum/150/150" />
                                 <div class="card-body">
@@ -133,7 +138,7 @@
                         </div>
 
                         <!-- Item 2 -->
-                        <div class="item2">
+                        <div class="cat-carousel-cell item2">
                             <div class="card rounded-0">
                                 <img src="https://picsum.photos/seed/picsum/150/150" />
                                 <div class="card-body">
@@ -157,7 +162,7 @@
                         </div>
 
                         <!-- Item 3 -->
-                        <div class="item3">
+                        <div class="cat-carousel-cell item3">
                             <div class="card rounded-0">
                                 <img src="https://picsum.photos/seed/picsum/150/150" />
                                 <div class="card-body">
@@ -181,7 +186,7 @@
                         </div>
 
                         <!-- Item 4 -->
-                        <div class="item4">
+                        <div class="cat-carousel-cell item4">
                             <div class="card rounded-0">
                                 <img src="https://picsum.photos/seed/picsum/150/150" />
                                 <div class="card-body">
@@ -205,7 +210,7 @@
                         </div>
 
                         <!-- Item 5 -->
-                        <div class="item5">
+                        <div class="cat-carousel-cell item5">
                             <div class="card rounded-0">
                                 <img src="https://picsum.photos/seed/picsum/150/150" />
                                 <div class="card-body">
@@ -229,7 +234,7 @@
                         </div>
 
                         <!-- Item 6 -->
-                        <div class="item6">
+                        <div class="cat-carousel-cell item6">
                             <div class="card rounded-0">
                                 <img src="https://picsum.photos/seed/picsum/150/150" />
                                 <div class="card-body">
