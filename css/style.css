@@ -273,3 +273,26 @@ input[type="text"] {
     border-radius:100%;
     background-color: #383838;
 }
+
+.copyright-text {
+    margin:0
+}
+
+.social-icons {
+    padding-left:0;
+    margin-bottom:0;
+    list-style:none
+}
+
+.social-icons li {
+    display:inline-block;
+    margin-bottom:4px
+}
+
+.social-icons li.title {
+    margin-right:15px;
+    text-transform:uppercase;
+    color:#96a2b2;
+    font-weight:700;
+    font-size:13px
+}
