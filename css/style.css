@@ -244,3 +244,14 @@ input[type="text"] {
 .footer-links li {
     display:block
 }
+
+.footer-links a {
+    color:#888888
+  }
+
+.footer-links a:active,
+.footer-links a:focus,
+.footer-links a:hover {
+    color:#3366cc;
+    text-decoration:none;
+}
