@@ -230,3 +230,8 @@ input[type="text"] {
 .navigation-content h6 {
     color: #d35266;
 }
+
+.navigation-content hr,
+.category-content hr {
+    border-color: #d35266;
+}
