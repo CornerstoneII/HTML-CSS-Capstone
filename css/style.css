@@ -219,3 +219,14 @@ input[type="text"] {
     color:#3366cc;
     text-decoration:none;
 }
+
+.about-content p,
+.about-content h6,
+.copyright-text {
+  color:#888888;
+}
+
+.category-content h6,
+.navigation-content h6 {
+    color: #d35266;
+}
