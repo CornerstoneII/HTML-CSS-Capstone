@@ -13,7 +13,7 @@
 
 ## Live demo
 
-🔗 [Homeboze Website Clone](#)
+🔗 [Splendid Online Shop](#)
 
 ## Built With
 
