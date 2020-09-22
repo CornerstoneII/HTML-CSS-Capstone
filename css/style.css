@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+/* Navigation Section */
+.mr-auto {
+    width: 90%;
+}
+
+.mr-auto li a {
+    color:#888888;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-item a:hover {
+  text-decoration: none;
+}
+
+.navbar-right {
+  width: 14%;
+}
+
+.mr-auto li {
+  display: inline;
+}
