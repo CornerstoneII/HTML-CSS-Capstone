@@ -128,3 +128,62 @@ input[type="text"] {
 .custom-popover li:last-child {
     border-top: 1px solid #ccc!important;
 }
+
+/* Category Section */
+
+.carousel:after {
+    content: 'flickity';
+    display: none;
+}
+
+.cat-carousel-cell {
+    width: 20%;
+    counter-increment: carousel-cell;
+    left: 16%;
+}
+
+.flickity-enabled .cat-carousel-cell {
+    margin-bottom: 150px;
+}
+
+  /* cell number */
+.cat-carousel-cell:before {
+    display: block;
+    text-align: center;
+    content: counter(carousel-cell);
+    line-height: 1px;
+    font-size: 20px;
+    color: white;
+}
+
+.flickity-prev-next-button .arrow {
+    fill: #d35266;
+}
+
+.text-muted b {
+    color: #d35266;
+    font-size: 14px;
+}
+
+.card {
+    width:220px;
+    height: 40%;
+}
+
+.card-title {
+    font-size: 14px;
+    color: #383838;
+}
+
+.cat-carousel .flickity-button{
+    background: transparent;
+}
+
+.cat-carousel .flickity-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 0 #09F;
+}
+
+.cat-carousel .flickity-prev-next-button .arrow {
+    fill: black;
+}
