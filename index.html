@@ -20,62 +20,60 @@
     <!-- Site Navigation Header -->
     <header>
         <nav class="navbar navbar-dark bg-dark navbar-expand"  role="navigation">
-            <div class="container">
+          <div class="container">
 
-                <div class="navbar-collapse collapse">
+            <div class="navbar-collapse collapse">
 
-                    <ul class="navbar-nav mr-auto justify-content-between w-7">
+              <ul class="navbar-nav mr-auto justify-content-between w-7">
 
-                    <a class="navbar-brand" href="#">Splendid!</a>
+                <a class="navbar-brand" href="#">Splendid!</a>
 
-                        <li class="nav-item">
-                            <a href="#">
-                                <i class="fas fa-home pr-1"></i>Home
-                            </a>
-                        </li>
+                <li class="nav-item pt-2">
+                  <a href="#">
+                    <i class="fas fa-home pr-1"></i>Home</a>
+                </li>
 
-                        <li class="nav-item">
-                            <a href="#">
-                                <i class="fas fa-boxes pr-1"></i>Collections
-                            </a>
-                        </li>
+                <li class="nav-item pt-2">
+                <a href="#">
+                  <i class="fas fa-boxes pr-1"></i>Collections</a>
+                </li>
 
-                        <li class="nav-item">
-                            <a href="#">
-                                <i class="fas fa-shopping-cart pr-1"></i>Purchase
-                            </a>
-                        </li>
+                <li class="nav-item pt-2">
+                <a href="#">
+                  <i class="fas fa-shopping-cart pr-1"></i>Purchase</a>
+                </li>
 
-                        <button class="d-md-block btn btn-danger navbar-btn d-none d-sm-block">Post An Ad</button>
-
-                    </ul>
-
-                </div>
-
-                <!--    Navigation Right    -->
-                <ul class="justify-content-between navbar-nav navbar-right">
-
-                    <li class="nav-item">
-                        <a class="nav-item" href="#">
-                            <i class='fas fa-envelope' style='color: #888888;'></i>
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-item" href="#">
-                            <i class='fas fa-user-circle' style='color:#888888;'></i>
-                        </a>
-                    </li>
-
-                </ul>
+                <button class="d-md-block btn btn-danger navbar-btn d-none d-sm-block">Post An Ad</button>
+              </ul>
 
             </div>
 
-        </nav>
+
+             <!--    Navigation Right    -->
+            <ul class="justify-content-between navbar-nav navbar-right">
+
+                <li class="nav-item">
+                    <a class="nav-item" href="#">
+                     <i class='fas fa-envelope' style='color: #888888;'></i>
+                      </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-item" href="#">
+                        <i class='fas fa-user-circle' style='color:#888888;'></i>
+                    </a>
+                </li>
+
+            </ul>
+
+
+
+         </div>
+       </nav>
     </header>
 
     <!-- Site Main Section -->
-    <main class="jumbotron text-center rounded-0">
+    <main class="pb-5">
 
         <!-- Search Section -->
         <section class="jumbotron text-center rounded-0">
@@ -83,183 +81,893 @@
               <form>
                 <div class="btn-group">
 
-                    <button class="btn button rounded-0 pl-0 inline"  data-toggle="dropdown"><i class="fas fa-caret-down"></i> Category</button>
-                    <div class="dropdown-menu">
-                        <a href="#home">Men</a>
-                        <div class="dropdown-divider"></div>
-                        <a href="#about">Women</a>
-                        <div class="dropdown-divider"></div>
-                        <a href="#contact">Jewelery</a>
-                    </div>
 
-                    <div class="div pl-1"><input class="rounded-0" type="text" class="form-control" placeholder="Enter Product Name" name="productName"></div>
 
-                    <div class="div pl-0 mr-2"><input class="rounded-0" type="text" class="form-control" placeholder="Enter Price" name="productPrice"></div>
 
-                    <button class="btn button rounded-0">Search</button>
 
+                  <button class="btn button rounded-0 pl-0 inline"  data-toggle="dropdown"> <i class="fas fa-caret-down"></i> Category</button>
+                  <div class="dropdown-menu">
+                    <a href="#home">Men</a>
+                    <div class="dropdown-divider"></div>
+                    <a href="#about">Women</a>
+                    <div class="dropdown-divider"></div>
+                    <a href="#contact">Jewelery</a>
                   </div>
-                </form>
-              </div>
+
+
+
+
+
+
+                  <div class="div pl-1"><input class="rounded-0" style="border: 0 none transparent" type="text" class="form-control" placeholder="Enter Product Name" name="productName"></div>
+
+
+
+
+                  <div class="div pl-0 mr-2"><input class="rounded-0" style="border: 0 none transparent" type="text" class="form-control" placeholder="Enter Price" name="productPrice"></div>
+
+
+
+
+
+                  <button class="btn button rounded-0">Search</button>
+
+                </div>
+              </form>
+            </div>
         </section>
 
         <!-- Category Section Section -->
         <div class="category-section">
 
-            <!-- Category Title -->
-            <div class="category-icon pl-4 pb-4 pt-5">
-                <i class='fas fa-tshirt pr-3' style='font-size:20px;'></i> <span>Fashion</span> (Skirts, Gowns, Pants, Shirts.)
+            <!-- Electronics Category -->
+            <div class="category-icon pl-4 pb-4 pt-5"><i class='fas fa-tv pr-3' style='font-size:20px;'></i> <span>Electronics</span> (Phones, Camera, Computer, Headphones.)</div>
+            <div class="carousel-wrapper">
+              <div class="carousel cat-carousel" data-flickity='{ "pageDots": false, "freeScroll": true, "contain": true, "watchCSS": true }'>
+
+                <!-- Item 1 -->
+                <div class="cat-carousel-cell item1">
+                  <div class="card rounded-0">
+                    <img src="./images/27.jpg" style="width: 100%; height: auto;" />
+                    <div class="card-body">
+                      <h6 class="card-title">Nokia X6 (6.1 Plus) 5.8-Inch(6GB, 64GB ROM) Android 8.1</h6>
+
+                      <p class="card-text"><small class="text-muted"><b>New</b></small></p>
+                      <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
+                        <div id="popover-content" style="display: none;">
+                          <ul class="list-group custom-popover">
+                            <li class="list-group-item">Send Message</li>
+                            <li class="list-group-item">Add To Collection</li>
+                            <li class="list-group-item">More Details</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <p class="text-muted pt-3"><b>$70</b></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="cat-carousel-cell item2">
+                  <div class="card rounded-0">
+                    <img src="./images/28.jpg" style="width: 100%; height: auto;" />
+                    <div class="card-body">
+                      <h6 class="card-title">Nokia X6 (6.1 Plus) 5.8-Inch(6GB, 64GB ROM) Android 8.1</h6>
+
+                      <p class="card-text"><small class="text-muted"><b>New</b></small></p>
+                      <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
+                        <div id="popover-content" style="display: none;">
+                          <ul class="list-group custom-popover">
+                            <li class="list-group-item">Send Message</li>
+                            <li class="list-group-item">Add To Collection</li>
+                            <li class="list-group-item">More Details</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <p class="text-muted pt-3"><b>$70</b></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="cat-carousel-cell item3">
+                  <div class="card rounded-0">
+                    <img src="./images/29.jpg"  style="width: 100%; height: auto;"/>
+                    <div class="card-body">
+                      <h6 class="card-title">Nokia X6 (6.1 Plus) 5.8-Inch(6GB, 64GB ROM) Android 8.1</h6>
+
+                      <p class="card-text"><small class="text-muted"><b>New</b></small></p>
+                      <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
+                        <div id="popover-content" style="display: none;">
+                          <ul class="list-group custom-popover">
+                            <li class="list-group-item">Send Message</li>
+                            <li class="list-group-item">Add To Collection</li>
+                            <li class="list-group-item">More Details</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <p class="text-muted pt-3"><b>$70</b></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="cat-carousel-cell item4">
+                  <div class="card rounded-0">
+                    <img src="./images/30.jpg"  style="width: 100%; height: auto;"/>
+                    <div class="card-body">
+                      <h6 class="card-title">Nokia X6 (6.1 Plus) 5.8-Inch(6GB, 64GB ROM) Android 8.1</h6>
+
+                      <p class="card-text"><small class="text-muted"><b>New</b></small></p>
+                      <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
+                        <div id="popover-content" style="display: none;">
+                          <ul class="list-group custom-popover">
+                            <li class="list-group-item">Send Message</li>
+                            <li class="list-group-item">Add To Collection</li>
+                            <li class="list-group-item">More Details</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <p class="text-muted pt-3"><b>$70</b></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="cat-carousel-cell item5">
+                  <div class="card rounded-0">
+                    <img src="./images/31.jpg"  style="width: 100%; height: auto;"/>
+                    <div class="card-body">
+                      <h6 class="card-title">Nokia X6 (6.1 Plus) 5.8-Inch(6GB, 64GB ROM) Android 8.1</h6>
+
+                      <p class="card-text"><small class="text-muted"><b>New</b></small></p>
+                      <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
+                        <div id="popover-content" style="display: none;">
+                          <ul class="list-group custom-popover">
+                            <li class="list-group-item">Send Message</li>
+                            <li class="list-group-item">Add To Collection</li>
+                            <li class="list-group-item">More Details</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <p class="text-muted pt-3"><b>$70</b></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="cat-carousel-cell item6">
+                  <div class="card rounded-0">
+                    <img src="./images/32.jpg"  style="width: 100%; height: auto;"/>
+                    <div class="card-body">
+                      <h6 class="card-title">Nokia X6 (6.1 Plus) 5.8-Inch(6GB, 64GB ROM) Android 8.1</h6>
+
+                      <p class="card-text"><small class="text-muted"><b>New</b></small></p>
+                      <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
+                        <div id="popover-content" style="display: none;">
+                          <ul class="list-group custom-popover">
+                            <li class="list-group-item">Send Message</li>
+                            <li class="list-group-item">Add To Collection</li>
+                            <li class="list-group-item">More Details</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <p class="text-muted pt-3"><b>$70</b></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Item 7 -->
+                <div class="cat-carousel-cell item6">
+                    <div class="card rounded-0">
+                      <img src="./images/33.jpg"  style="width: 100%; height: auto;"/>
+                      <div class="card-body">
+                        <h6 class="card-title">Nokia X6 (6.1 Plus) 5.8-Inch(6GB, 64GB ROM) Android 8.1</h6>
+
+                        <p class="card-text"><small class="text-muted"><b>New</b></small></p>
+                        <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
+                          <div id="popover-content" style="display: none;">
+                            <ul class="list-group custom-popover">
+                              <li class="list-group-item">Send Message</li>
+                              <li class="list-group-item">Add To Collection</li>
+                              <li class="list-group-item">More Details</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <p class="text-muted pt-3"><b>$70</b></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                <!-- Item 8 -->
+                <div class="cat-carousel-cell item6">
+                    <div class="card rounded-0">
+                      <img src="./images/34.jpg"  style="width: 100%; height: auto;"/>
+                      <div class="card-body">
+                        <h6 class="card-title">Nokia X6 (6.1 Plus) 5.8-Inch(6GB, 64GB ROM) Android 8.1</h6>
+
+                        <p class="card-text"><small class="text-muted"><b>New</b></small></p>
+                        <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
+                          <div id="popover-content" style="display: none;">
+                            <ul class="list-group custom-popover">
+                              <li class="list-group-item">Send Message</li>
+                              <li class="list-group-item">Add To Collection</li>
+                              <li class="list-group-item">More Details</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <p class="text-muted pt-3"><b>$70</b></p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+                  <!-- Item 9 -->
+                <div class="cat-carousel-cell item6">
+                    <div class="card rounded-0">
+                      <img src="./images/35.jpg"  style="width: 100%; height: auto;"/>
+                      <div class="card-body">
+                        <h6 class="card-title">Nokia X6 (6.1 Plus) 5.8-Inch(6GB, 64GB ROM) Android 8.1</h6>
+
+                        <p class="card-text"><small class="text-muted"><b>New</b></small></p>
+                        <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
+                          <div id="popover-content" style="display: none;">
+                            <ul class="list-group custom-popover">
+                              <li class="list-group-item">Send Message</li>
+                              <li class="list-group-item">Add To Collection</li>
+                              <li class="list-group-item">More Details</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <p class="text-muted pt-3"><b>$70</b></p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+                  <!-- Item 10 -->
+                <div class="cat-carousel-cell item6">
+                    <div class="card rounded-0">
+                      <img src="./images/36.jpg"  style="width: 100%; height: auto;"/>
+                      <div class="card-body">
+                        <h6 class="card-title">Nokia X6 (6.1 Plus) 5.8-Inch(6GB, 64GB ROM) Android 8.1</h6>
+
+                        <p class="card-text"><small class="text-muted"><b>New</b></small></p>
+                        <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
+                          <div id="popover-content" style="display: none;">
+                            <ul class="list-group custom-popover">
+                              <li class="list-group-item">Send Message</li>
+                              <li class="list-group-item">Add To Collection</li>
+                              <li class="list-group-item">More Details</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <p class="text-muted pt-3"><b>$70</b></p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+                  <!-- Item 11 -->
+                <div class="cat-carousel-cell item6">
+                    <div class="card rounded-0">
+                      <img src="./images/37.jpg" class="img-fluid"  style="width: 100%; height: auto;"/>
+                      <div class="card-body">
+                        <h6 class="card-title">Nokia X6 (6.1 Plus) 5.8-Inch(6GB, 64GB ROM) Android 8.1</h6>
+
+                        <p class="card-text"><small class="text-muted"><b>New</b></small></p>
+                        <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
+                          <div id="popover-content" style="display: none;">
+                            <ul class="list-group custom-popover">
+                              <li class="list-group-item">Send Message</li>
+                              <li class="list-group-item">Add To Collection</li>
+                              <li class="list-group-item">More Details</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <p class="text-muted pt-3"><b>$70</b></p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+              </div>
             </div>
 
-            <!-- Carousel -->
+            <!-- Fashion Category -->
+            <div class="category-icon pl-4 pb-4 pt-5"><i class='fas fa-tshirt pr-3' style='font-size:20px;'></i> <span>Fashion</span> (Skirts, Gowns, Pants, Accessories, Shirts.)</div>
             <div class="carousel-wrapper">
-                <div class="carousel cat-carousel" data-flickity='{ "pageDots": false, "freeScroll": true, "contain": true, "watchCSS": true }'>
+              <div class="carousel cat-carousel" data-flickity='{ "pageDots": false, "freeScroll": true, "contain": true, "watchCSS": true }'>
 
-                        <!-- Item 1 -->
-                        <div class="cat-carousel-cell item1">
-                            <div class="card rounded-0">
-                                <img src="https://picsum.photos/seed/picsum/150/150" />
-                                <div class="card-body">
-                                    <h6 class="card-title">Nokia X6 (6.1 Plus) 5.8-Inch(6GB, 64GB ROM) Android 8.1</h6>
-                                    <p class="card-text"><small class="text-muted"><b>New</b></small></p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
-                                        <div id="popover-content" style="display: none;">
-                                            <ul class="list-group custom-popover">
-                                            <li class="list-group-item">Send Message</li>
-                                            <li class="list-group-item">Add To Collection</li>
-                                            <li class="list-group-item">More Details</li>
-                                            </ul>
-                                        </div>
-                                        </div>
-                                        <p class="text-muted pt-3"><b>$70</b></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <!-- Item 1 -->
+                <div class="cat-carousel-cell item1">
+                  <div class="card rounded-0">
+                    <img src="./images/14.jpg" style="width: 100%; height: auto;" />
+                    <div class="card-body">
+                      <h6 class="card-title">Nokia X6 (6.1 Plus) 5.8-Inch(6GB, 64GB ROM) Android 8.1</h6>
 
-                        <!-- Item 2 -->
-                        <div class="cat-carousel-cell item2">
-                            <div class="card rounded-0">
-                                <img src="https://picsum.photos/seed/picsum/150/150" />
-                                <div class="card-body">
-                                    <h6 class="card-title">Nokia X6 (6.1 Plus) 5.8-Inch(6GB, 64GB ROM) Android 8.1</h6>
-                                    <p class="card-text"><small class="text-muted"><b>New</b></small></p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
-                                        <div id="popover-content" style="display: none;">
-                                            <ul class="list-group custom-popover">
-                                            <li class="list-group-item">Send Message</li>
-                                            <li class="list-group-item">Add To Collection</li>
-                                            <li class="list-group-item">More Details</li>
-                                            </ul>
-                                        </div>
-                                        </div>
-                                        <p class="text-muted pt-3"><b>$70</b></p>
-                                    </div>
-                                </div>
-                            </div>
+                      <p class="card-text"><small class="text-muted"><b>New</b></small></p>
+                      <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
+                        <div id="popover-content" style="display: none;">
+                          <ul class="list-group custom-popover">
+                            <li class="list-group-item">Send Message</li>
+                            <li class="list-group-item">Add To Collection</li>
+                            <li class="list-group-item">More Details</li>
+                          </ul>
                         </div>
-
-                        <!-- Item 3 -->
-                        <div class="cat-carousel-cell item3">
-                            <div class="card rounded-0">
-                                <img src="https://picsum.photos/seed/picsum/150/150" />
-                                <div class="card-body">
-                                    <h6 class="card-title">Nokia X6 (6.1 Plus) 5.8-Inch(6GB, 64GB ROM) Android 8.1</h6>
-                                    <p class="card-text"><small class="text-muted"><b>New</b></small></p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
-                                        <div id="popover-content" style="display: none;">
-                                            <ul class="list-group custom-popover">
-                                            <li class="list-group-item">Send Message</li>
-                                            <li class="list-group-item">Add To Collection</li>
-                                            <li class="list-group-item">More Details</li>
-                                            </ul>
-                                        </div>
-                                        </div>
-                                        <p class="text-muted pt-3"><b>$70</b></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Item 4 -->
-                        <div class="cat-carousel-cell item4">
-                            <div class="card rounded-0">
-                                <img src="https://picsum.photos/seed/picsum/150/150" />
-                                <div class="card-body">
-                                    <h6 class="card-title">Nokia X6 (6.1 Plus) 5.8-Inch(6GB, 64GB ROM) Android 8.1</h6>
-                                    <p class="card-text"><small class="text-muted"><b>New</b></small></p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
-                                        <div id="popover-content" style="display: none;">
-                                            <ul class="list-group custom-popover">
-                                            <li class="list-group-item">Send Message</li>
-                                            <li class="list-group-item">Add To Collection</li>
-                                            <li class="list-group-item">More Details</li>
-                                            </ul>
-                                        </div>
-                                        </div>
-                                        <p class="text-muted pt-3"><b>$70</b></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Item 5 -->
-                        <div class="cat-carousel-cell item5">
-                            <div class="card rounded-0">
-                                <img src="https://picsum.photos/seed/picsum/150/150" />
-                                <div class="card-body">
-                                    <h6 class="card-title">Nokia X6 (6.1 Plus) 5.8-Inch(6GB, 64GB ROM) Android 8.1</h6>
-                                    <p class="card-text"><small class="text-muted"><b>New</b></small></p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
-                                        <div id="popover-content" style="display: none;">
-                                            <ul class="list-group custom-popover">
-                                            <li class="list-group-item">Send Message</li>
-                                            <li class="list-group-item">Add To Collection</li>
-                                            <li class="list-group-item">More Details</li>
-                                            </ul>
-                                        </div>
-                                        </div>
-                                        <p class="text-muted pt-3"><b>$70</b></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Item 6 -->
-                        <div class="cat-carousel-cell item6">
-                            <div class="card rounded-0">
-                                <img src="https://picsum.photos/seed/picsum/150/150" />
-                                <div class="card-body">
-                                    <h6 class="card-title">Nokia X6 (6.1 Plus) 5.8-Inch(6GB, 64GB ROM) Android 8.1</h6>
-                                    <p class="card-text"><small class="text-muted"><b>New</b></small></p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
-                                        <div id="popover-content" style="display: none;">
-                                            <ul class="list-group custom-popover">
-                                            <li class="list-group-item">Send Message</li>
-                                            <li class="list-group-item">Add To Collection</li>
-                                            <li class="list-group-item">More Details</li>
-                                            </ul>
-                                        </div>
-                                        </div>
-                                        <p class="text-muted pt-3"><b>$70</b></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                      </div>
+                      <p class="text-muted pt-3"><b>$70</b></p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-             </div>
+
+                <!-- Item 2 -->
+                <div class="cat-carousel-cell item2">
+                  <div class="card rounded-0">
+                    <img src="./images/15.jpg" style="width: 100%; height: auto;" />
+                    <div class="card-body">
+                      <h6 class="card-title">Nokia X6 (6.1 Plus) 5.8-Inch(6GB, 64GB ROM) Android 8.1</h6>
+
+                      <p class="card-text"><small class="text-muted"><b>New</b></small></p>
+                      <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
+                        <div id="popover-content" style="display: none;">
+                          <ul class="list-group custom-popover">
+                            <li class="list-group-item">Send Message</li>
+                            <li class="list-group-item">Add To Collection</li>
+                            <li class="list-group-item">More Details</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <p class="text-muted pt-3"><b>$70</b></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="cat-carousel-cell item3">
+                  <div class="card rounded-0">
+                    <img src="./images/17.jpg"  style="width: 100%; height: auto;"/>
+                    <div class="card-body">
+                      <h6 class="card-title">Nokia X6 (6.1 Plus) 5.8-Inch(6GB, 64GB ROM) Android 8.1</h6>
+
+                      <p class="card-text"><small class="text-muted"><b>New</b></small></p>
+                      <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
+                        <div id="popover-content" style="display: none;">
+                          <ul class="list-group custom-popover">
+                            <li class="list-group-item">Send Message</li>
+                            <li class="list-group-item">Add To Collection</li>
+                            <li class="list-group-item">More Details</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <p class="text-muted pt-3"><b>$70</b></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="cat-carousel-cell item4">
+                  <div class="card rounded-0">
+                    <img src="./images/4.jpg"  style="width: 100%; height: auto;"/>
+                    <div class="card-body">
+                      <h6 class="card-title">Nokia X6 (6.1 Plus) 5.8-Inch(6GB, 64GB ROM) Android 8.1</h6>
+
+                      <p class="card-text"><small class="text-muted"><b>New</b></small></p>
+                      <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
+                        <div id="popover-content" style="display: none;">
+                          <ul class="list-group custom-popover">
+                            <li class="list-group-item">Send Message</li>
+                            <li class="list-group-item">Add To Collection</li>
+                            <li class="list-group-item">More Details</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <p class="text-muted pt-3"><b>$70</b></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="cat-carousel-cell item5">
+                  <div class="card rounded-0">
+                    <img src="./images/7.jpg"  style="width: 100%; height: auto;"/>
+                    <div class="card-body">
+                      <h6 class="card-title">Nokia X6 (6.1 Plus) 5.8-Inch(6GB, 64GB ROM) Android 8.1</h6>
+
+                      <p class="card-text"><small class="text-muted"><b>New</b></small></p>
+                      <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
+                        <div id="popover-content" style="display: none;">
+                          <ul class="list-group custom-popover">
+                            <li class="list-group-item">Send Message</li>
+                            <li class="list-group-item">Add To Collection</li>
+                            <li class="list-group-item">More Details</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <p class="text-muted pt-3"><b>$70</b></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="cat-carousel-cell item6">
+                  <div class="card rounded-0">
+                    <img src="./images/8.jpg"  style="width: 100%; height: auto;"/>
+                    <div class="card-body">
+                      <h6 class="card-title">Nokia X6 (6.1 Plus) 5.8-Inch(6GB, 64GB ROM) Android 8.1</h6>
+
+                      <p class="card-text"><small class="text-muted"><b>New</b></small></p>
+                      <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
+                        <div id="popover-content" style="display: none;">
+                          <ul class="list-group custom-popover">
+                            <li class="list-group-item">Send Message</li>
+                            <li class="list-group-item">Add To Collection</li>
+                            <li class="list-group-item">More Details</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <p class="text-muted pt-3"><b>$70</b></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Item 7 -->
+                <div class="cat-carousel-cell item6">
+                    <div class="card rounded-0">
+                      <img src="./images/9.jpg"  style="width: 100%; height: auto;"/>
+                      <div class="card-body">
+                        <h6 class="card-title">Nokia X6 (6.1 Plus) 5.8-Inch(6GB, 64GB ROM) Android 8.1</h6>
+
+                        <p class="card-text"><small class="text-muted"><b>New</b></small></p>
+                        <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
+                          <div id="popover-content" style="display: none;">
+                            <ul class="list-group custom-popover">
+                              <li class="list-group-item">Send Message</li>
+                              <li class="list-group-item">Add To Collection</li>
+                              <li class="list-group-item">More Details</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <p class="text-muted pt-3"><b>$70</b></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                <!-- Item 8 -->
+                <div class="cat-carousel-cell item6">
+                    <div class="card rounded-0">
+                      <img src="./images/10.jpg"  style="width: 100%; height: auto;"/>
+                      <div class="card-body">
+                        <h6 class="card-title">Nokia X6 (6.1 Plus) 5.8-Inch(6GB, 64GB ROM) Android 8.1</h6>
+
+                        <p class="card-text"><small class="text-muted"><b>New</b></small></p>
+                        <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
+                          <div id="popover-content" style="display: none;">
+                            <ul class="list-group custom-popover">
+                              <li class="list-group-item">Send Message</li>
+                              <li class="list-group-item">Add To Collection</li>
+                              <li class="list-group-item">More Details</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <p class="text-muted pt-3"><b>$70</b></p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+                  <!-- Item 9 -->
+                <div class="cat-carousel-cell item6">
+                    <div class="card rounded-0">
+                      <img src="./images/12.jpg"  style="width: 100%; height: auto;"/>
+                      <div class="card-body">
+                        <h6 class="card-title">Nokia X6 (6.1 Plus) 5.8-Inch(6GB, 64GB ROM) Android 8.1</h6>
+
+                        <p class="card-text"><small class="text-muted"><b>New</b></small></p>
+                        <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
+                          <div id="popover-content" style="display: none;">
+                            <ul class="list-group custom-popover">
+                              <li class="list-group-item">Send Message</li>
+                              <li class="list-group-item">Add To Collection</li>
+                              <li class="list-group-item">More Details</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <p class="text-muted pt-3"><b>$70</b></p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+                  <!-- Item 10 -->
+                <div class="cat-carousel-cell item6">
+                    <div class="card rounded-0">
+                      <img src="./images/18.jpg"  style="width: 100%; height: auto;"/>
+                      <div class="card-body">
+                        <h6 class="card-title">Nokia X6 (6.1 Plus) 5.8-Inch(6GB, 64GB ROM) Android 8.1</h6>
+
+                        <p class="card-text"><small class="text-muted"><b>New</b></small></p>
+                        <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
+                          <div id="popover-content" style="display: none;">
+                            <ul class="list-group custom-popover">
+                              <li class="list-group-item">Send Message</li>
+                              <li class="list-group-item">Add To Collection</li>
+                              <li class="list-group-item">More Details</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <p class="text-muted pt-3"><b>$70</b></p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+                  <!-- Item 11 -->
+                <div class="cat-carousel-cell item6">
+                    <div class="card rounded-0">
+                      <img src="./images/19.jpg"  style="width: 100%; height: auto;"/>
+                      <div class="card-body">
+                        <h6 class="card-title">Nokia X6 (6.1 Plus) 5.8-Inch(6GB, 64GB ROM) Android 8.1</h6>
+
+                        <p class="card-text"><small class="text-muted"><b>New</b></small></p>
+                        <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
+                          <div id="popover-content" style="display: none;">
+                            <ul class="list-group custom-popover">
+                              <li class="list-group-item">Send Message</li>
+                              <li class="list-group-item">Add To Collection</li>
+                              <li class="list-group-item">More Details</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <p class="text-muted pt-3"><b>$70</b></p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Shoe Category -->
+            <div class="category-icon pl-4 pb-4 pt-3"><i class='fas fa-shoe-prints fa-rotate-270 pr-3' style='font-size:20px;'></i> <span>Shoes</span> (Men, Women, Kids.)</div>
+            <div class="carousel-wrapper">
+              <div class="carousel cat-carousel" data-flickity='{ "pageDots": false, "freeScroll": true, "contain": true, "watchCSS": true }'>
+
+                <!-- Item 1 -->
+                <div class="cat-carousel-cell item1">
+                  <div class="card rounded-0">
+                    <img src="./images/1.jpg" style="width: 100%; height: auto;" />
+                    <div class="card-body">
+                      <h6 class="card-title">Nokia X6 (6.1 Plus) 5.8-Inch(6GB, 64GB ROM) Android 8.1</h6>
+
+                      <p class="card-text"><small class="text-muted"><b>New</b></small></p>
+                      <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
+                        <div id="popover-content" style="display: none;">
+                          <ul class="list-group custom-popover">
+                            <li class="list-group-item">Send Message</li>
+                            <li class="list-group-item">Add To Collection</li>
+                            <li class="list-group-item">More Details</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <p class="text-muted pt-3"><b>$70</b></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="cat-carousel-cell item2">
+                  <div class="card rounded-0">
+                    <img src="./images/2.jpg" style="width: 100%; height: auto;" />
+                    <div class="card-body">
+                      <h6 class="card-title">Nokia X6 (6.1 Plus) 5.8-Inch(6GB, 64GB ROM) Android 8.1</h6>
+
+                      <p class="card-text"><small class="text-muted"><b>New</b></small></p>
+                      <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
+                        <div id="popover-content" style="display: none;">
+                          <ul class="list-group custom-popover">
+                            <li class="list-group-item">Send Message</li>
+                            <li class="list-group-item">Add To Collection</li>
+                            <li class="list-group-item">More Details</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <p class="text-muted pt-3"><b>$70</b></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="cat-carousel-cell item3">
+                  <div class="card rounded-0">
+                    <img src="./images/3.jpg"  style="width: 100%; height: auto;"/>
+                    <div class="card-body">
+                      <h6 class="card-title">Nokia X6 (6.1 Plus) 5.8-Inch(6GB, 64GB ROM) Android 8.1</h6>
+
+                      <p class="card-text"><small class="text-muted"><b>New</b></small></p>
+                      <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
+                        <div id="popover-content" style="display: none;">
+                          <ul class="list-group custom-popover">
+                            <li class="list-group-item">Send Message</li>
+                            <li class="list-group-item">Add To Collection</li>
+                            <li class="list-group-item">More Details</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <p class="text-muted pt-3"><b>$70</b></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="cat-carousel-cell item4">
+                  <div class="card rounded-0">
+                    <img src="./images/16.jpg"  style="width: 100%; height: auto;"/>
+                    <div class="card-body">
+                      <h6 class="card-title">Nokia X6 (6.1 Plus) 5.8-Inch(6GB, 64GB ROM) Android 8.1</h6>
+
+                      <p class="card-text"><small class="text-muted"><b>New</b></small></p>
+                      <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
+                        <div id="popover-content" style="display: none;">
+                          <ul class="list-group custom-popover">
+                            <li class="list-group-item">Send Message</li>
+                            <li class="list-group-item">Add To Collection</li>
+                            <li class="list-group-item">More Details</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <p class="text-muted pt-3"><b>$70</b></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="cat-carousel-cell item5">
+                  <div class="card rounded-0">
+                    <img src="./images/20.jpg"  style="width: 100%; height: auto;"/>
+                    <div class="card-body">
+                      <h6 class="card-title">Nokia X6 (6.1 Plus) 5.8-Inch(6GB, 64GB ROM) Android 8.1</h6>
+
+                      <p class="card-text"><small class="text-muted"><b>New</b></small></p>
+                      <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
+                        <div id="popover-content" style="display: none;">
+                          <ul class="list-group custom-popover">
+                            <li class="list-group-item">Send Message</li>
+                            <li class="list-group-item">Add To Collection</li>
+                            <li class="list-group-item">More Details</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <p class="text-muted pt-3"><b>$70</b></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="cat-carousel-cell item6">
+                  <div class="card rounded-0">
+                    <img src="./images/21.jpg"  style="width: 100%; height: auto;"/>
+                    <div class="card-body">
+                      <h6 class="card-title">Nokia X6 (6.1 Plus) 5.8-Inch(6GB, 64GB ROM) Android 8.1</h6>
+
+                      <p class="card-text"><small class="text-muted"><b>New</b></small></p>
+                      <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
+                        <div id="popover-content" style="display: none;">
+                          <ul class="list-group custom-popover">
+                            <li class="list-group-item">Send Message</li>
+                            <li class="list-group-item">Add To Collection</li>
+                            <li class="list-group-item">More Details</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <p class="text-muted pt-3"><b>$70</b></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Item 7 -->
+                <div class="cat-carousel-cell item6">
+                  <div class="card rounded-0">
+                    <img src="./images/22.jpg"  style="width: 100%; height: auto;"/>
+                    <div class="card-body">
+                      <h6 class="card-title">Nokia X6 (6.1 Plus) 5.8-Inch(6GB, 64GB ROM) Android 8.1</h6>
+
+                      <p class="card-text"><small class="text-muted"><b>New</b></small></p>
+                      <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
+                        <div id="popover-content" style="display: none;">
+                          <ul class="list-group custom-popover">
+                            <li class="list-group-item">Send Message</li>
+                            <li class="list-group-item">Add To Collection</li>
+                            <li class="list-group-item">More Details</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <p class="text-muted pt-3"><b>$70</b></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Item 8 -->
+                <div class="cat-carousel-cell item6">
+                    <div class="card rounded-0">
+                      <img src="./images/23.jpg"  style="width: 100%; height: auto;"/>
+                      <div class="card-body">
+                        <h6 class="card-title">Nokia X6 (6.1 Plus) 5.8-Inch(6GB, 64GB ROM) Android 8.1</h6>
+
+                        <p class="card-text"><small class="text-muted"><b>New</b></small></p>
+                        <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
+                          <div id="popover-content" style="display: none;">
+                            <ul class="list-group custom-popover">
+                              <li class="list-group-item">Send Message</li>
+                              <li class="list-group-item">Add To Collection</li>
+                              <li class="list-group-item">More Details</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <p class="text-muted pt-3"><b>$70</b></p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+                <!-- Item 9 -->
+                <div class="cat-carousel-cell item6">
+                    <div class="card rounded-0">
+                      <img src="./images/24.jpg"  style="width: 100%; height: auto;"/>
+                      <div class="card-body">
+                        <h6 class="card-title">Nokia X6 (6.1 Plus) 5.8-Inch(6GB, 64GB ROM) Android 8.1</h6>
+
+                        <p class="card-text"><small class="text-muted"><b>New</b></small></p>
+                        <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
+                          <div id="popover-content" style="display: none;">
+                            <ul class="list-group custom-popover">
+                              <li class="list-group-item">Send Message</li>
+                              <li class="list-group-item">Add To Collection</li>
+                              <li class="list-group-item">More Details</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <p class="text-muted pt-3"><b>$70</b></p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+                <!-- Item 10 -->
+                <div class="cat-carousel-cell item6">
+                    <div class="card rounded-0">
+                      <img src="./images/25.jpg"  style="width: 100%; height: auto;"/>
+                      <div class="card-body">
+                        <h6 class="card-title">Nokia X6 (6.1 Plus) 5.8-Inch(6GB, 64GB ROM) Android 8.1</h6>
+
+                        <p class="card-text"><small class="text-muted"><b>New</b></small></p>
+                        <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
+                          <div id="popover-content" style="display: none;">
+                            <ul class="list-group custom-popover">
+                              <li class="list-group-item">Send Message</li>
+                              <li class="list-group-item">Add To Collection</li>
+                              <li class="list-group-item">More Details</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <p class="text-muted pt-3"><b>$70</b></p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+                <!-- Item 11 -->
+                <div class="cat-carousel-cell item6">
+                    <div class="card rounded-0">
+                      <img src="./images/26.jpg"  style="width: 100%; height: auto;"/>
+                      <div class="card-body">
+                        <h6 class="card-title">Nokia X6 (6.1 Plus) 5.8-Inch(6GB, 64GB ROM) Android 8.1</h6>
+
+                        <p class="card-text"><small class="text-muted"><b>New</b></small></p>
+                        <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
+                          <div id="popover-content" style="display: none;">
+                            <ul class="list-group custom-popover">
+                              <li class="list-group-item">Send Message</li>
+                              <li class="list-group-item">Add To Collection</li>
+                              <li class="list-group-item">More Details</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <p class="text-muted pt-3"><b>$70</b></p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+              </div>
+            </div>
 
         </div>
 
@@ -332,7 +1040,7 @@
 
 
     <!-- JavaScript -->
-
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

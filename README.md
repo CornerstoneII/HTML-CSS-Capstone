@@ -21,6 +21,7 @@
 - CSS3
 - Font awesome
 - Bootstrap 4
+- Carousel from [Flickity](https://flickity.metafizzy.co)
 - Image source from [unsplash.com](https://unsplash.com/)
 
 
@@ -38,7 +39,6 @@ Web browser and access to internet
 
 ```sh
 https://github.com/CornerstoneII/HTML-CSS-Capstone.git
-
 ```
 
 2) Navigate to the project folder and execute the "index.html" file.
@@ -69,4 +69,4 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Microverse for showing the way for this project to happen
-- [Mohammed Awad on Behance](https://www.behance.net/gallery/24796463/ZATTIX)
+- [Mohammed Awad on Behance](https://www.behance.net/M_Awad)
