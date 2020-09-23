@@ -342,3 +342,86 @@ input[type="text"] {
 .social-icons a.dribbble:hover {
     background-color:#ea4c89
 }
+
+/* Media Query For Various Screen Sizes */
+
+@media (max-width: 576px) {
+    .mr-auto li {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:767px) {
+
+    .carousel:after {
+        content: '';
+    }
+
+    .cat-carousel {
+        display: grid;
+        grid-template-areas: "item1 item2";
+    }
+
+    .button,
+    .div input {
+        height: 30px;
+    }
+
+    .div input {
+        width: 90px;
+    }
+
+    .button {
+        width: 60px;
+    }
+
+    input[type="text"] {
+        box-sizing: border-box;
+        padding-left: 10px;
+    }
+
+    .button,
+    .div {
+        font-size: 7px;
+    }
+
+    .button:last-child {
+        padding-left: 2px;
+        padding-right: 10px;
+    }
+
+    .site-footer {
+        padding-bottom:0
+    }
+    .social-icons {
+        text-align:center
+    }
+
+    .social-icons li.title {
+        display:block;
+        margin-right:0;
+        font-weight:600
+    }
+
+}
+
+@media (max-width: 768px) {
+    .mr-auto {
+      width: 100%;
+    }
+
+    .navbar-right {
+     display: none;
+      }
+  }
+
+@media (max-width:991px) {
+
+ .button:last-child {
+    padding-left: 20px;
+  }
+
+ .site-footer [class^=col-] {
+      margin-bottom:30px
+ }
+}
