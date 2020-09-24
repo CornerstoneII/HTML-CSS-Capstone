@@ -26,7 +26,7 @@
 
               <ul class="navbar-nav mr-auto justify-content-between w-7">
 
-                <a class="navbar-brand" href="#">Splendid!</a>
+                <li><a class="navbar-brand" href="#">Splendid!</a></li>
 
                 <li class="nav-item pt-2">
                   <a href="#">
@@ -40,10 +40,12 @@
 
                 <li class="nav-item pt-2">
                 <a href="#">
-                  <i class="fas fa-shopping-cart pr-1"></i>Purchase</a>
+                    <i class="fas fa-shopping-cart pr-1"></i>Purchase
+                </a>
                 </li>
 
-                <button class="d-md-block btn btn-danger navbar-btn d-none d-sm-block">Post An Ad</button>
+                <li><button type="button" class="d-md-block btn btn-danger navbar-btn d-none d-sm-block">Post An Ad</button></li>
+
               </ul>
 
             </div>
@@ -81,11 +83,7 @@
               <form>
                 <div class="btn-group">
 
-
-
-
-
-                  <button class="btn button rounded-0 pl-0 inline"  data-toggle="dropdown"> <i class="fas fa-caret-down"></i> Category</button>
+                  <button type="button" class="btn button rounded-0 pl-0 inline"  data-toggle="dropdown"> <i class="fas fa-caret-down"></i> Category</button>
                   <div class="dropdown-menu">
                     <a href="#home">Men</a>
                     <div class="dropdown-divider"></div>
@@ -94,23 +92,11 @@
                     <a href="#contact">Jewelery</a>
                   </div>
 
+                  <div class="div pl-1"><input style="border: 0 none transparent" type="text" class="form-control rounded-0" placeholder="Enter Product Name" name="productName"></div>
 
+                  <div class="div pl-0 mr-2"><input style="border: 0 none transparent" type="text" class="form-control rounded-0" placeholder="Enter Price" name="productPrice"></div>
 
-
-
-
-                  <div class="div pl-1"><input class="rounded-0" style="border: 0 none transparent" type="text" class="form-control" placeholder="Enter Product Name" name="productName"></div>
-
-
-
-
-                  <div class="div pl-0 mr-2"><input class="rounded-0" style="border: 0 none transparent" type="text" class="form-control" placeholder="Enter Price" name="productPrice"></div>
-
-
-
-
-
-                  <button class="btn button rounded-0">Search</button>
+                  <button type="button" class="btn button rounded-0">Search</button>
 
                 </div>
               </form>
@@ -128,7 +114,7 @@
                 <!-- Item 1 -->
                 <div class="cat-carousel-cell item1">
                   <div class="card rounded-0">
-                    <img src="./images/27.jpg" style="width: 100%; height: auto;" />
+                    <img src="./images/27.jpg" style="width: 100%; height: auto;" alt="Product Image" />
                     <div class="card-body">
                       <h6 class="card-title">Extra Bass Wireless Headphones</h6>
 
@@ -136,7 +122,7 @@
                       <div class="d-flex justify-content-between align-items-center">
                       <div class="btn-group">
                         <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
-                        <div id="popover-content" style="display: none;">
+                        <div style="display: none;">
                           <ul class="list-group custom-popover">
                             <li class="list-group-item">Send Message</li>
                             <li class="list-group-item">Add To Collection</li>
@@ -153,7 +139,7 @@
                 <!-- Item 2 -->
                 <div class="cat-carousel-cell item2">
                   <div class="card rounded-0">
-                    <img src="./images/28.jpg" style="width: 100%; height: auto;" />
+                    <img src="./images/28.jpg" style="width: 100%; height: auto;" alt="Product Image" />
                     <div class="card-body">
                       <h6 class="card-title">Wireless X-Box Gamepad Controller</h6>
 
@@ -161,7 +147,7 @@
                       <div class="d-flex justify-content-between align-items-center">
                       <div class="btn-group">
                         <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
-                        <div id="popover-content" style="display: none;">
+                        <div style="display: none;">
                           <ul class="list-group custom-popover">
                             <li class="list-group-item">Send Message</li>
                             <li class="list-group-item">Add To Collection</li>
@@ -178,7 +164,7 @@
                 <!-- Item 3 -->
                 <div class="cat-carousel-cell item3">
                   <div class="card rounded-0">
-                    <img src="./images/29.jpg"  style="width: 100%; height: auto;"/>
+                    <img src="./images/29.jpg"  style="width: 100%; height: auto;" alt="Product Image"/>
                     <div class="card-body">
                       <h6 class="card-title">Sony Playstation 1 Slim Console</h6>
 
@@ -186,7 +172,7 @@
                       <div class="d-flex justify-content-between align-items-center">
                       <div class="btn-group">
                         <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
-                        <div id="popover-content" style="display: none;">
+                        <div style="display: none;">
                           <ul class="list-group custom-popover">
                             <li class="list-group-item">Send Message</li>
                             <li class="list-group-item">Add To Collection</li>
@@ -203,7 +189,7 @@
                 <!-- Item 4 -->
                 <div class="cat-carousel-cell item4">
                   <div class="card rounded-0">
-                    <img src="./images/30.jpg"  style="width: 100%; height: auto;"/>
+                    <img src="./images/30.jpg"  style="width: 100%; height: auto;" alt="Product Image"/>
                     <div class="card-body">
                       <h6 class="card-title">Apple iPhone 6 Plus 64GB</h6>
 
@@ -211,7 +197,7 @@
                       <div class="d-flex justify-content-between align-items-center">
                       <div class="btn-group">
                         <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
-                        <div id="popover-content" style="display: none;">
+                        <div style="display: none;">
                           <ul class="list-group custom-popover">
                             <li class="list-group-item">Send Message</li>
                             <li class="list-group-item">Add To Collection</li>
@@ -228,7 +214,7 @@
                 <!-- Item 5 -->
                 <div class="cat-carousel-cell item5">
                   <div class="card rounded-0">
-                    <img src="./images/31.jpg"  style="width: 100%; height: auto;"/>
+                    <img src="./images/31.jpg"  style="width: 100%; height: auto;" alt="Product Image"/>
                     <div class="card-body">
                       <h6 class="card-title">Slim Mini Wireless (Bluetooth) Keyboard</h6>
 
@@ -236,7 +222,7 @@
                       <div class="d-flex justify-content-between align-items-center">
                       <div class="btn-group">
                         <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
-                        <div id="popover-content" style="display: none;">
+                        <div style="display: none;">
                           <ul class="list-group custom-popover">
                             <li class="list-group-item">Send Message</li>
                             <li class="list-group-item">Add To Collection</li>
@@ -253,7 +239,7 @@
                 <!-- Item 6 -->
                 <div class="cat-carousel-cell item6">
                   <div class="card rounded-0">
-                    <img src="./images/32.jpg"  style="width: 100%; height: auto;"/>
+                    <img src="./images/32.jpg"  style="width: 100%; height: auto;" alt="Product Image"/>
                     <div class="card-body">
                       <h6 class="card-title">XIOAMI Mi Portable Bluetooth Speaker</h6>
 
@@ -261,7 +247,7 @@
                       <div class="d-flex justify-content-between align-items-center">
                       <div class="btn-group">
                         <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
-                        <div id="popover-content" style="display: none;">
+                        <div style="display: none;">
                           <ul class="list-group custom-popover">
                             <li class="list-group-item">Send Message</li>
                             <li class="list-group-item">Add To Collection</li>
@@ -278,7 +264,7 @@
                 <!-- Item 7 -->
                 <div class="cat-carousel-cell item6">
                     <div class="card rounded-0">
-                      <img src="./images/33.jpg"  style="width: 100%; height: auto;"/>
+                      <img src="./images/33.jpg"  style="width: 100%; height: auto;" alt="Product Image"/>
                       <div class="card-body">
                         <h6 class="card-title">Apple iPhone 11 Pro Max (4GB RAM, 256GB ROM)</h6>
 
@@ -286,7 +272,7 @@
                         <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
                           <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
-                          <div id="popover-content" style="display: none;">
+                          <div style="display: none;">
                             <ul class="list-group custom-popover">
                               <li class="list-group-item">Send Message</li>
                               <li class="list-group-item">Add To Collection</li>
@@ -303,7 +289,7 @@
                 <!-- Item 8 -->
                 <div class="cat-carousel-cell item6">
                     <div class="card rounded-0">
-                      <img src="./images/34.jpg"  style="width: 100%; height: auto;"/>
+                      <img src="./images/34.jpg"  style="width: 100%; height: auto;" alt="Product Image"/>
                       <div class="card-body">
                         <h6 class="card-title">Apple iPad Pro 10.5 (256GB ROM, 4GB RAM)</h6>
 
@@ -311,7 +297,7 @@
                         <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
                           <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
-                          <div id="popover-content" style="display: none;">
+                          <div style="display: none;">
                             <ul class="list-group custom-popover">
                               <li class="list-group-item">Send Message</li>
                               <li class="list-group-item">Add To Collection</li>
@@ -328,7 +314,7 @@
                   <!-- Item 9 -->
                 <div class="cat-carousel-cell item6">
                     <div class="card rounded-0">
-                      <img src="./images/35.jpg"  style="width: 100%; height: auto;"/>
+                      <img src="./images/35.jpg"  style="width: 100%; height: auto;" alt="Product Image"/>
                       <div class="card-body">
                         <h6 class="card-title">ASUS M409(1TB HDD, 16GB 2400MHz RAM)</h6>
 
@@ -336,7 +322,7 @@
                         <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
                           <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
-                          <div id="popover-content" style="display: none;">
+                          <div style="display: none;">
                             <ul class="list-group custom-popover">
                               <li class="list-group-item">Send Message</li>
                               <li class="list-group-item">Add To Collection</li>
@@ -353,7 +339,7 @@
                   <!-- Item 10 -->
                 <div class="cat-carousel-cell item6">
                     <div class="card rounded-0">
-                      <img src="./images/36.jpg"  style="width: 100%; height: auto;"/>
+                      <img src="./images/36.jpg"  style="width: 100%; height: auto;" alt="Product Image"/>
                       <div class="card-body">
                         <h6 class="card-title">Apple iMac Core I5 - 8GB RAM 1TB HDD</h6>
 
@@ -361,7 +347,7 @@
                         <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
                           <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
-                          <div id="popover-content" style="display: none;">
+                          <div style="display: none;">
                             <ul class="list-group custom-popover">
                               <li class="list-group-item">Send Message</li>
                               <li class="list-group-item">Add To Collection</li>
@@ -378,7 +364,7 @@
                   <!-- Item 11 -->
                 <div class="cat-carousel-cell item6">
                     <div class="card rounded-0">
-                      <img src="./images/37.jpg" class="img-fluid"  style="width: 100%; height: auto;"/>
+                      <img src="./images/37.jpg" class="img-fluid"  style="width: 100%; height: auto;" alt="Product Image"/>
                       <div class="card-body">
                         <h6 class="card-title">LG 4K Smart TV "65" + Magic Remote</h6>
 
@@ -386,7 +372,7 @@
                         <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
                           <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
-                          <div id="popover-content" style="display: none;">
+                          <div style="display: none;">
                             <ul class="list-group custom-popover">
                               <li class="list-group-item">Send Message</li>
                               <li class="list-group-item">Add To Collection</li>
@@ -411,7 +397,7 @@
                 <!-- Item 1 -->
                 <div class="cat-carousel-cell item1">
                   <div class="card rounded-0">
-                    <img src="./images/14.jpg" style="width: 100%; height: auto;" />
+                    <img src="./images/14.jpg" style="width: 100%; height: auto;" alt="Product Image" />
                     <div class="card-body">
                       <h6 class="card-title">Set For Men (White Shirt + Belt + Pant)</h6>
 
@@ -419,7 +405,7 @@
                       <div class="d-flex justify-content-between align-items-center">
                       <div class="btn-group">
                         <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
-                        <div id="popover-content" style="display: none;">
+                        <div style="display: none;">
                           <ul class="list-group custom-popover">
                             <li class="list-group-item">Send Message</li>
                             <li class="list-group-item">Add To Collection</li>
@@ -436,7 +422,7 @@
                 <!-- Item 2 -->
                 <div class="cat-carousel-cell item2">
                   <div class="card rounded-0">
-                    <img src="./images/15.jpg" style="width: 100%; height: auto;" />
+                    <img src="./images/15.jpg" style="width: 100%; height: auto;" alt="Product Image" />
                     <div class="card-body">
                       <h6 class="card-title">Smart Stock Jeans For Women</h6>
 
@@ -444,7 +430,7 @@
                       <div class="d-flex justify-content-between align-items-center">
                       <div class="btn-group">
                         <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
-                        <div id="popover-content" style="display: none;">
+                        <div style="display: none;">
                           <ul class="list-group custom-popover">
                             <li class="list-group-item">Send Message</li>
                             <li class="list-group-item">Add To Collection</li>
@@ -461,7 +447,7 @@
                 <!-- Item 3 -->
                 <div class="cat-carousel-cell item3">
                   <div class="card rounded-0">
-                    <img src="./images/17.jpg"  style="width: 100%; height: auto;"/>
+                    <img src="./images/17.jpg"  style="width: 100%; height: auto;" alt="Product Image"/>
                     <div class="card-body">
                       <h6 class="card-title">Black Eye Clear Lens Glasses</h6>
 
@@ -469,7 +455,7 @@
                       <div class="d-flex justify-content-between align-items-center">
                       <div class="btn-group">
                         <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
-                        <div id="popover-content" style="display: none;">
+                        <div style="display: none;">
                           <ul class="list-group custom-popover">
                             <li class="list-group-item">Send Message</li>
                             <li class="list-group-item">Add To Collection</li>
@@ -486,7 +472,7 @@
                 <!-- Item 4 -->
                 <div class="cat-carousel-cell item4">
                   <div class="card rounded-0">
-                    <img src="./images/4.jpg"  style="width: 100%; height: auto;"/>
+                    <img src="./images/4.jpg"  style="width: 100%; height: auto;" alt="Product Image"/>
                     <div class="card-body">
                       <h6 class="card-title">Leather Small Bag One Shoulder Black</h6>
 
@@ -494,7 +480,7 @@
                       <div class="d-flex justify-content-between align-items-center">
                       <div class="btn-group">
                         <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
-                        <div id="popover-content" style="display: none;">
+                        <div style="display: none;">
                           <ul class="list-group custom-popover">
                             <li class="list-group-item">Send Message</li>
                             <li class="list-group-item">Add To Collection</li>
@@ -511,7 +497,7 @@
                 <!-- Item 5 -->
                 <div class="cat-carousel-cell item5">
                   <div class="card rounded-0">
-                    <img src="./images/7.jpg"  style="width: 100%; height: auto;"/>
+                    <img src="./images/7.jpg"  style="width: 100%; height: auto;" alt="Product Image"/>
                     <div class="card-body">
                       <h6 class="card-title">Fashionable Striped Shirt For Men</h6>
 
@@ -519,7 +505,7 @@
                       <div class="d-flex justify-content-between align-items-center">
                       <div class="btn-group">
                         <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
-                        <div id="popover-content" style="display: none;">
+                        <div style="display: none;">
                           <ul class="list-group custom-popover">
                             <li class="list-group-item">Send Message</li>
                             <li class="list-group-item">Add To Collection</li>
@@ -536,7 +522,7 @@
                 <!-- Item 6 -->
                 <div class="cat-carousel-cell item6">
                   <div class="card rounded-0">
-                    <img src="./images/8.jpg"  style="width: 100%; height: auto;"/>
+                    <img src="./images/8.jpg"  style="width: 100%; height: auto;" alt="Product Image"/>
                     <div class="card-body">
                       <h6 class="card-title">Floral Print Boho Casual Party Dress</h6>
 
@@ -544,7 +530,7 @@
                       <div class="d-flex justify-content-between align-items-center">
                       <div class="btn-group">
                         <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
-                        <div id="popover-content" style="display: none;">
+                        <div style="display: none;">
                           <ul class="list-group custom-popover">
                             <li class="list-group-item">Send Message</li>
                             <li class="list-group-item">Add To Collection</li>
@@ -561,7 +547,7 @@
                 <!-- Item 7 -->
                 <div class="cat-carousel-cell item6">
                     <div class="card rounded-0">
-                      <img src="./images/9.jpg"  style="width: 100%; height: auto;"/>
+                      <img src="./images/9.jpg"  style="width: 100%; height: auto;" alt="Product Image"/>
                       <div class="card-body">
                         <h6 class="card-title">Floral Print (Beach Casual Party Dress)</h6>
 
@@ -569,7 +555,7 @@
                         <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
                           <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
-                          <div id="popover-content" style="display: none;">
+                          <div style="display: none;">
                             <ul class="list-group custom-popover">
                               <li class="list-group-item">Send Message</li>
                               <li class="list-group-item">Add To Collection</li>
@@ -586,7 +572,7 @@
                 <!-- Item 8 -->
                 <div class="cat-carousel-cell item6">
                     <div class="card rounded-0">
-                      <img src="./images/10.jpg"  style="width: 100%; height: auto;"/>
+                      <img src="./images/10.jpg"  style="width: 100%; height: auto;" alt="Product Image"/>
                       <div class="card-body">
                         <h6 class="card-title">Smart Men Royal Suit with Pants</h6>
 
@@ -594,7 +580,7 @@
                         <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
                           <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
-                          <div id="popover-content" style="display: none;">
+                          <div style="display: none;">
                             <ul class="list-group custom-popover">
                               <li class="list-group-item">Send Message</li>
                               <li class="list-group-item">Add To Collection</li>
@@ -611,7 +597,7 @@
                   <!-- Item 9 -->
                 <div class="cat-carousel-cell item6">
                     <div class="card rounded-0">
-                      <img src="./images/12.jpg"  style="width: 100%; height: auto;"/>
+                      <img src="./images/12.jpg"  style="width: 100%; height: auto;" alt="Product Image"/>
                       <div class="card-body">
                         <h6 class="card-title">Apple Series Smart Watch</h6>
 
@@ -619,7 +605,7 @@
                         <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
                           <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
-                          <div id="popover-content" style="display: none;">
+                          <div style="display: none;">
                             <ul class="list-group custom-popover">
                               <li class="list-group-item">Send Message</li>
                               <li class="list-group-item">Add To Collection</li>
@@ -636,7 +622,7 @@
                   <!-- Item 10 -->
                 <div class="cat-carousel-cell item6">
                     <div class="card rounded-0">
-                      <img src="./images/18.jpg"  style="width: 100%; height: auto;"/>
+                      <img src="./images/18.jpg"  style="width: 100%; height: auto;" alt="Product Image"/>
                       <div class="card-body">
                         <h6 class="card-title">Portable Plaid Leather Handbag - Grey</h6>
 
@@ -644,7 +630,7 @@
                         <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
                           <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
-                          <div id="popover-content" style="display: none;">
+                          <div style="display: none;">
                             <ul class="list-group custom-popover">
                               <li class="list-group-item">Send Message</li>
                               <li class="list-group-item">Add To Collection</li>
@@ -661,7 +647,7 @@
                   <!-- Item 11 -->
                 <div class="cat-carousel-cell item6">
                     <div class="card rounded-0">
-                      <img src="./images/19.jpg"  style="width: 100%; height: auto;"/>
+                      <img src="./images/19.jpg"  style="width: 100%; height: auto;" alt="Product Image"/>
                       <div class="card-body">
                         <h6 class="card-title">Colourful Kids Wear & Accessories</h6>
 
@@ -669,7 +655,7 @@
                         <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
                           <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
-                          <div id="popover-content" style="display: none;">
+                          <div style="display: none;">
                             <ul class="list-group custom-popover">
                               <li class="list-group-item">Send Message</li>
                               <li class="list-group-item">Add To Collection</li>
@@ -687,14 +673,14 @@
             </div>
 
             <!-- Shoe Category -->
-            <div class="category-icon pl-4 pb-4 pt-3"><i class='fas fa-shoe-prints fa-rotate-270 pr-3' style='font-size:20px;'></i> <span>Shoes</span> (Men, Women, Kids.)</div>
+            <div class="category-icon pl-4 pb-4 pt-5"><i class='fas fa-shoe-prints fa-rotate-270 pr-3' style='font-size:20px;'></i> <span>Shoes</span> (Men, Women, Kids.)</div>
             <div class="carousel-wrapper">
               <div class="carousel cat-carousel" data-flickity='{ "pageDots": false, "freeScroll": true, "contain": true, "watchCSS": true }'>
 
                 <!-- Item 1 -->
                 <div class="cat-carousel-cell item1">
                   <div class="card rounded-0">
-                    <img src="./images/1.jpg" style="width: 100%; height: auto;" />
+                    <img src="./images/1.jpg" style="width: 100%; height: auto;" alt="Product Image" />
                     <div class="card-body">
                       <h6 class="card-title">Open Toe High Heel</h6>
 
@@ -702,7 +688,7 @@
                       <div class="d-flex justify-content-between align-items-center">
                       <div class="btn-group">
                         <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
-                        <div id="popover-content" style="display: none;">
+                        <div style="display: none;">
                           <ul class="list-group custom-popover">
                             <li class="list-group-item">Send Message</li>
                             <li class="list-group-item">Add To Collection</li>
@@ -719,7 +705,7 @@
                 <!-- Item 2 -->
                 <div class="cat-carousel-cell item2">
                   <div class="card rounded-0">
-                    <img src="./images/2.jpg" style="width: 100%; height: auto;" />
+                    <img src="./images/2.jpg" style="width: 100%; height: auto;" alt="Product Image" />
                     <div class="card-body">
                       <h6 class="card-title">Men's Leather Shoe</h6>
 
@@ -727,7 +713,7 @@
                       <div class="d-flex justify-content-between align-items-center">
                       <div class="btn-group">
                         <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
-                        <div id="popover-content" style="display: none;">
+                        <div style="display: none;">
                           <ul class="list-group custom-popover">
                             <li class="list-group-item">Send Message</li>
                             <li class="list-group-item">Add To Collection</li>
@@ -744,7 +730,7 @@
                 <!-- Item 3 -->
                 <div class="cat-carousel-cell item3">
                   <div class="card rounded-0">
-                    <img src="./images/3.jpg"  style="width: 100%; height: auto;"/>
+                    <img src="./images/3.jpg"  style="width: 100%; height: auto;" alt="Product Image"/>
                     <div class="card-body">
                       <h6 class="card-title">Men's Leather Shoe</h6>
 
@@ -752,7 +738,7 @@
                       <div class="d-flex justify-content-between align-items-center">
                       <div class="btn-group">
                         <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
-                        <div id="popover-content" style="display: none;">
+                        <div style="display: none;">
                           <ul class="list-group custom-popover">
                             <li class="list-group-item">Send Message</li>
                             <li class="list-group-item">Add To Collection</li>
@@ -769,7 +755,7 @@
                 <!-- Item 4 -->
                 <div class="cat-carousel-cell item4">
                   <div class="card rounded-0">
-                    <img src="./images/16.jpg"  style="width: 100%; height: auto;"/>
+                    <img src="./images/16.jpg"  style="width: 100%; height: auto;" alt="Product Image"/>
                     <div class="card-body">
                       <h6 class="card-title">Nike Air Sneakers</h6>
 
@@ -777,7 +763,7 @@
                       <div class="d-flex justify-content-between align-items-center">
                       <div class="btn-group">
                         <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
-                        <div id="popover-content" style="display: none;">
+                        <div style="display: none;">
                           <ul class="list-group custom-popover">
                             <li class="list-group-item">Send Message</li>
                             <li class="list-group-item">Add To Collection</li>
@@ -794,7 +780,7 @@
                 <!-- Item 5 -->
                 <div class="cat-carousel-cell item5">
                   <div class="card rounded-0">
-                    <img src="./images/20.jpg"  style="width: 100%; height: auto;"/>
+                    <img src="./images/20.jpg"  style="width: 100%; height: auto;" alt="Product Image"/>
                     <div class="card-body">
                       <h6 class="card-title">Converse Sneakers</h6>
 
@@ -802,7 +788,7 @@
                       <div class="d-flex justify-content-between align-items-center">
                       <div class="btn-group">
                         <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
-                        <div id="popover-content" style="display: none;">
+                        <div style="display: none;">
                           <ul class="list-group custom-popover">
                             <li class="list-group-item">Send Message</li>
                             <li class="list-group-item">Add To Collection</li>
@@ -819,7 +805,7 @@
                 <!-- Item 6 -->
                 <div class="cat-carousel-cell item6">
                   <div class="card rounded-0">
-                    <img src="./images/21.jpg"  style="width: 100%; height: auto;"/>
+                    <img src="./images/21.jpg"  style="width: 100%; height: auto;" alt="Product Image"/>
                     <div class="card-body">
                       <h6 class="card-title">Baby Bootees</h6>
 
@@ -827,7 +813,7 @@
                       <div class="d-flex justify-content-between align-items-center">
                       <div class="btn-group">
                         <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
-                        <div id="popover-content" style="display: none;">
+                        <div style="display: none;">
                           <ul class="list-group custom-popover">
                             <li class="list-group-item">Send Message</li>
                             <li class="list-group-item">Add To Collection</li>
@@ -844,7 +830,7 @@
                 <!-- Item 7 -->
                 <div class="cat-carousel-cell item6">
                   <div class="card rounded-0">
-                    <img src="./images/22.jpg"  style="width: 100%; height: auto;"/>
+                    <img src="./images/22.jpg"  style="width: 100%; height: auto;" alt="Product Image"/>
                     <div class="card-body">
                       <h6 class="card-title">Men Boots</h6>
 
@@ -852,7 +838,7 @@
                       <div class="d-flex justify-content-between align-items-center">
                       <div class="btn-group">
                         <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
-                        <div id="popover-content" style="display: none;">
+                        <div style="display: none;">
                           <ul class="list-group custom-popover">
                             <li class="list-group-item">Send Message</li>
                             <li class="list-group-item">Add To Collection</li>
@@ -869,7 +855,7 @@
                 <!-- Item 8 -->
                 <div class="cat-carousel-cell item6">
                     <div class="card rounded-0">
-                      <img src="./images/23.jpg"  style="width: 100%; height: auto;"/>
+                      <img src="./images/23.jpg"  style="width: 100%; height: auto;" alt="Product Image"/>
                       <div class="card-body">
                         <h6 class="card-title">Chelsea Brown Boots</h6>
 
@@ -877,7 +863,7 @@
                         <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
                           <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
-                          <div id="popover-content" style="display: none;">
+                          <div style="display: none;">
                             <ul class="list-group custom-popover">
                               <li class="list-group-item">Send Message</li>
                               <li class="list-group-item">Add To Collection</li>
@@ -894,7 +880,7 @@
                 <!-- Item 9 -->
                 <div class="cat-carousel-cell item6">
                     <div class="card rounded-0">
-                      <img src="./images/24.jpg"  style="width: 100%; height: auto;"/>
+                      <img src="./images/24.jpg"  style="width: 100%; height: auto;" alt="Product Image"/>
                       <div class="card-body">
                         <h6 class="card-title">Black Boots</h6>
 
@@ -902,7 +888,7 @@
                         <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
                           <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
-                          <div id="popover-content" style="display: none;">
+                          <div style="display: none;">
                             <ul class="list-group custom-popover">
                               <li class="list-group-item">Send Message</li>
                               <li class="list-group-item">Add To Collection</li>
@@ -919,7 +905,7 @@
                 <!-- Item 10 -->
                 <div class="cat-carousel-cell item6">
                     <div class="card rounded-0">
-                      <img src="./images/25.jpg"  style="width: 100%; height: auto;"/>
+                      <img src="./images/25.jpg"  style="width: 100%; height: auto;" alt="Product Image"/>
                       <div class="card-body">
                         <h6 class="card-title">Nike Air Force Special</h6>
 
@@ -927,7 +913,7 @@
                         <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
                           <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
-                          <div id="popover-content" style="display: none;">
+                          <div style="display: none;">
                             <ul class="list-group custom-popover">
                               <li class="list-group-item">Send Message</li>
                               <li class="list-group-item">Add To Collection</li>
@@ -944,7 +930,7 @@
                 <!-- Item 11 -->
                 <div class="cat-carousel-cell item6">
                     <div class="card rounded-0" style="height: auto;">
-                      <img src="./images/26.jpg"  style="width: 100%; height: auto;"/>
+                      <img src="./images/26.jpg"  style="width: 100%; height: auto;" alt="Product Image"/>
                       <div class="card-body">
                         <h6 class="card-title">Ladies Suede Heel</h6>
 
@@ -952,7 +938,7 @@
                         <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
                           <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
-                          <div id="popover-content" style="display: none;">
+                          <div style="display: none;">
                             <ul class="list-group custom-popover">
                               <li class="list-group-item">Send Message</li>
                               <li class="list-group-item">Add To Collection</li>
