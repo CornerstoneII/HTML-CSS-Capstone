@@ -5,7 +5,7 @@
 
 > This project was developed as a learning project, part of the Microverse curriculum. This project is about building a static page for an online directory of real estate properties. The goal was to build the page to be as identical in the somewhat vague [specification](https://www.behance.net/gallery/24796463/ZATTIX).
 
-![screenshot](./image/ProjectBehance.png)
+![Screenshot](./images/ProjectBehance.png)
 
 ## Project Description Video
 
