@@ -336,7 +336,7 @@ input[type="text"] {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .carousel::after {
     content: '';
   }
@@ -344,6 +344,7 @@ input[type="text"] {
   .cat-carousel {
     display: grid;
     grid-template-areas: "item1 item2";
+    justify-content: center;
   }
 
   .button,
@@ -362,6 +363,7 @@ input[type="text"] {
   input[type="text"] {
     box-sizing: border-box;
     padding-left: 10px;
+    font-size: 10px;
   }
 
   .button,
@@ -387,9 +389,7 @@ input[type="text"] {
     margin-right: 0;
     font-weight: 600;
   }
-}
 
-@media (max-width: 768px) {
   .mr-auto {
     width: 100%;
   }

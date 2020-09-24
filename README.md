@@ -5,15 +5,15 @@
 
 > This project was developed as a learning project, part of the Microverse curriculum. This project is about building a static page for an online directory of real estate properties. The goal was to build the page to be as identical in the somewhat vague [specification](https://www.behance.net/gallery/24796463/ZATTIX).
 
-![screenshot](./image/)
+![screenshot](./image/ProjectBehance.png)
 
 ## Project Description Video
 
-🔗 [loom](#)
+🔗 [Loom Video Link](https://www.loom.com/share/f9b8ba20409944a4be63bd06378c44d6)
 
 ## Live demo
 
-🔗 [Splendid Online Shop](#)
+🔗 [Splendid Online Shop](https://raw.githack.com/CornerstoneII/HTML-CSS-Capstone/feature/index.html)
 
 ## Built With
 
