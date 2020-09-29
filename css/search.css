@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@900&display=swap');
+
+/* Navigation Section */
+.navbar-brand {
+  font-family: 'Cinzel Decorative', cursive;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: #888;
+}
+
+.navbar-brand,
+.nav-item a {
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.nav-item {
+  padding-top: 0;
+}
+
+.mr-auto {
+  width: 90%;
+}
+
+.navbar-right {
+  width: 14%;
+}
+
+.mr-auto li {
+  display: inline;
+}
+
+.social-icons a {
+  background-color: #eceeef;
+  color: #818a91;
+  font-size: 16px;
+  display: inline-block;
+  line-height: 44px;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  margin-right: 8px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.page-item a {
+  height: 34px;
+  color: #383838;
+  font-weight: bold;
+}
+
+.ellipsis a {
+  color: black;
+  pointer-events: none;
+}
+
+.bg-gray,
+.ellipsis a {
+  background-color: #e9ecef;
+}
+
+.footer-links a,
+.site-footer a,
+.mr-auto li a {
+  color: #888;
+}
+
+.mr-auto li a,
+.nav-icon,
+.ad-btn {
+  font-size: 14px;
+}
+
+/* End Navigation Section */
+
+/* Jumbotron Section */
+
+.jumbotron {
+  background-color: #d35266;
+  height: 280px;
+}
+
+.container h1 {
+  font-weight: bold;
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 32px;
+}
+
+.jumbotron-uppercase,
+.lead,
+.ad-btn {
+  color: #fff;
+}
+
+.btn:focus,
+.btn:active {
+  outline: none;
+  box-shadow: none;
+}
+
+.btn-main {
+  font-size: 12px;
+  padding-top: 15px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.rm-pt {
+  padding-top: 10px;
+}
+
+.btn-cat {
+  padding-bottom: 15px;
+  margin-right: 1px;
+}
+
+.btn-search {
+  padding-bottom: 13px;
+  margin-left: 8px;
+  background-color: #383838;
+  color: #888;
+}
+
+input::placeholder {
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.ml {
+  margin-right: 2px;
+}
+
+.form-control:focus {
+  border-color: #ccc;
+  outline: 0;
+  box-shadow: none;
+}
+
+.input-group-lg > .form-control {
+  padding: 0 0.6rem;
+}
+
+/*  End Jumbotron Section */
+
+.mb-4 hr {
+  width: 95%;
+}
+
+.search-btn {
+  height: 35px;
+  background-color: white;
+}
+
+.price-btn {
+  font-weight: bold;
+}
+
+.mb-3 hr {
+  width: 100%;
+}
+
+.page-item a:hover {
+  color: white;
+  background-color: #d35266;
+}
+
+.card-text {
+  color: #888;
+}
+
+.card-title {
+  color: #383838;
+}
+
+.card-text-button button {
+  background-color: #d35266;
+  color: white;
+}
+
+/*  Footer Section */
+.social-icons li {
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+.footer-links li {
+  display: block;
+}
+
+.footer-links.inline li {
+  display: inline-block;
+}
+
+.list-group-item:hover {
+  background-color: #383838;
+  color: white;
+}
+
+.site-footer {
+  padding: 45px 0 20px;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.site-footer hr {
+  border-top-color: #bbb;
+  opacity: 0.5;
+}
+
+.site-footer hr.small {
+  margin: 20px 0;
+}
+
+.site-footer h6 {
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 5px;
+  letter-spacing: 2px;
+}
+
+.site-footer a:hover {
+  color: #36c;
+  text-decoration: none;
+}
+
+.about-content p,
+.about-content h6,
+.copyright-text {
+  color: #888;
+}
+
+.category-content h6,
+.navigation-content h6 {
+  color: #d35266;
+}
+
+.navigation-content hr,
+.category-content hr {
+  border-color: #d35266;
+}
+
+.footer-links {
+  padding-left: 0;
+  list-style: none;
+}
+
+.footer-links a:active,
+.footer-links a:focus,
+.footer-links a:hover {
+  color: #36c;
+  text-decoration: none;
+}
+
+.site-footer .social-icons a {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 6px;
+  margin-right: 0;
+  border-radius: 100%;
+  background-color: #383838;
+}
+
+.copyright-text {
+  margin: 0;
+}
+
+.social-icons {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  text-align: right;
+}
+
+.social-icons li.title {
+  margin-right: 15px;
+  text-transform: uppercase;
+  color: #96a2b2;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.social-icons a:active,
+.social-icons a:focus,
+.social-icons a:hover {
+  color: #fff;
+  background-color: #29aafe;
+}
+
+.social-icons.size-sm a {
+  line-height: 34px;
+  height: 34px;
+  width: 34px;
+  font-size: 14px;
+}
+
+.social-icons a.facebook:hover {
+  background-color: #3b5998;
+}
+
+.social-icons a.twitter:hover {
+  background-color: #00aced;
+}
+
+.social-icons a.linkedin:hover {
+  background-color: #007bb6;
+}
+
+.social-icons a.dribbble:hover {
+  background-color: #ea4c89;
+}
+
+/*  End Footer Section */
+
+/* Media Query For Various Screen Sizes */
+@media screen and (max-width: 480px) {
+  .mr-auto li a {
+    font-size: 10px;
+  }
+
+  .nav-icon {
+    font-size: 10px;
+  }
+
+  .card-text-button {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .mr-auto li {
+    font-size: 14px;
+  }
+
+  .navbar-brand,
+  .nav-item a {
+    font-size: 8px;
+  }
+
+  .col-12 {
+    padding-bottom: 200px;
+  }
+
+  .btn-group {
+    height: 35px;
+  }
+
+  input::placeholder {
+    font-size: 12px !important;
+    padding-top: 0;
+  }
+
+  .btn-main {
+    font-size: 10px;
+    padding-top: 12px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .nav-item {
+    padding-top: 0 !important;
+  }
+
+  .jumbotron-uppercase {
+    font-size: 12px;
+  }
+
+  .lead {
+    font-size: 0.7em !important;
+  }
+
+  .form-control {
+    height: 42px !important;
+  }
+
+  .cat-container {
+    padding-bottom: 10px;
+  }
+
+  .rm-pt {
+    padding-top: 5px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mr-auto {
+    width: 100%;
+  }
+
+  .navbar-right {
+    display: none;
+  }
+
+  .navbar-brand,
+  .nav-item a,
+  .ad-btn {
+    font-size: 13px;
+  }
+
+  .container h1 {
+    font-size: 20px;
+  }
+
+  .lead {
+    font-size: 16px;
+  }
+
+  .more-right {
+    display: none;
+  }
+
+  .category-icon {
+    font-size: 10px;
+  }
+
+  .more-right,
+  .product-category,
+  .category-icon i {
+    font-size: 14px;
+  }
+
+  .site-footer {
+    padding-bottom: 0;
+  }
+
+  .social-icons {
+    text-align: center;
+  }
+
+  .social-icons li.title {
+    display: block;
+    margin-right: 0;
+    font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .mr-auto {
+    width: 100%;
+  }
+
+  .navbar-right {
+    display: none;
+  }
+
+  .navbar-brand,
+  .nav-item a,
+  .ad-btn {
+    font-size: 13px;
+  }
+
+  .nav-item {
+    padding-top: 5px;
+  }
+
+  .site-footer [class^=col-] {
+    margin-bottom: 30px;
+  }
+}

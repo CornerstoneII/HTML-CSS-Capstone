@@ -1,0 +1,598 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <link rel="stylesheet" href="./css/search.css">
+
+    <title>Result Page</title>
+
+  </head>
+  <body class="skin-light">
+
+        <!-- Site Navigation Header -->
+         <header>
+      <nav class="navbar navbar-dark bg-dark navbar-expand">
+        <div class="container">
+
+          <div class="navbar-collapse collapse">
+
+            <ul class="navbar-nav mr-auto justify-content-between w-7">
+
+              <li>
+                  <a class="navbar-brand" href="index.html">
+                      Splendid!
+                  </a>
+              </li>
+
+              <li class="nav-item pt-2 pt-md-1">
+                <a href="index.html">
+                  <i class="nav-icon fas fa-home pr-1"></i>Home
+                </a>
+              </li>
+
+              <li class="nav-item pt-2 pt-md-1">
+                  <a href="#">
+                  <i class="nav-icon fas fa-boxes pr-1"></i>Collections
+                  </a>
+              </li>
+
+              <li class="nav-item pt-2 pt-md-1">
+                  <a href="#">
+                      <i class="nav-icon fas fa-shopping-cart pr-1"></i>Purchase
+                  </a>
+              </li>
+
+              <li><button type="button" class="d-md-block btn btn-danger navbar-btn d-none d-sm-block text-uppercase ad-btn">Post An Ad</button></li>
+
+            </ul>
+
+          </div>
+
+
+           <!--    Navigation Right    -->
+          <ul class="justify-content-between navbar-nav navbar-right">
+
+              <li class="nav-item">
+                  <a class="nav-item" href="#">
+                   <i class='fas fa-envelope'></i>
+                    </a>
+              </li>
+
+              <li class="nav-item">
+                  <a class="nav-item" href="#">
+                      <i class='fas fa-user-circle'></i>
+                  </a>
+              </li>
+
+          </ul>
+
+
+
+       </div>
+     </nav>
+         </header>
+        <!-- Site Navigation Header -->
+
+        <!--Main layout-->
+        <main class="bg-gray">
+          <!-- Jumbotron Section -->
+          <section class="jumbotron jumbotron-fluid">
+            <div class="container pt-3">
+          <h1 class="display-4 text-uppercase jumbotron-uppercase">Splendid</h1>
+          <p class="lead">Buying and Selling Couldnt' be simpler than this!</p>
+          <div class="row-fluid justify-content-center rm-pt">
+            <div class="form-group">
+              <div class="input-group input-group-lg">
+                <div class="input-group-btn bs-dropdown-to-select-group">
+                          <button type="button" class="btn btn-cat btn-main btn-lg btn-default bs-dropdown-to-select bg-white border-0 rounded-0" data-toggle="dropdown">
+                              <span><i class="fa fa-caret-down" aria-hidden="true"></i></span>
+                              <span data-bind="bs-drp-sel-label">All Categories</span>
+                              <input type="hidden" name="selected_value" data-bind="bs-drp-sel-value" value="">
+                              <span class="sr-only">Toggle Dropdown</span>
+                          </button>
+                          <ul class="dropdown-menu" role="menu">
+                              <li data-value="1"><a href="#">Men</a></li>
+                              <li data-value="2"><a href="#">Kids</a></li>
+                              <li data-value="3"><a href="#">Women</a></li>
+                          </ul>
+                </div>
+                <input type="text" class="form-control rounded-0  shadow-none ml" placeholder="Product Name" name="productName">
+                <input type="text" class="form-control rounded-0  shadow-none" placeholder="Product Price" name="productPrice">
+                <div class="input-group-btn">
+                  <button class="btn btn-main btn-search btn-lg btn-default rounded-0" type="button">Search</button>
+                </div>
+              </div>
+            </div>
+          </div>
+            </div>
+          </section>
+          <!-- Jumbotron Section -->
+
+          <div class="container">
+
+            <!--Grid row-->
+            <div class="row">
+
+              <!--Grid column-->
+                <div class="col-md-3 col-sm-12 mb-4">
+
+                <!-- Section: Sidebar -->
+                <div class="border-right">
+
+                  <!-- Section: Filters -->
+                  <div class="filters">
+
+                    <!-- Section: Condition -->
+                    <div class="mb-4">
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label text-capitalize" for="inlineCheckbox1">New</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="form-check-label text-capitalize" for="inlineCheckbox2">Used</label>
+                      </div>
+                    </div>
+                    <!-- Section: Condition -->
+
+                    <!-- Section: Type -->
+                    <section class="mb-4">
+
+                      <h6 class="font-weight-bold mb-3">Type</h6>
+                      <hr>
+                      <div class="justify-content-center">
+                        <div class="form-check pl-4 mb-3">
+                          <input
+                            type="checkbox"
+                            class="form-check-input filled-in"
+                            id="men"
+                          />
+
+                          <label
+                            class="form-check-label small text-capitalize card-link-secondary"
+                            for="men"
+                            >Men</label
+                          >
+                        </div>
+
+                        <div class="form-check pl-4 mb-3">
+                          <input
+                            type="checkbox"
+                            class="form-check-input filled-in"
+                            id="women"
+                          />
+                          <label
+                            class="form-check-label small text-capitalize card-link-secondary"
+                            for="women"
+                            >Women</label
+                          >
+                        </div>
+
+                        <div class="form-check pl-4 mb-3">
+                          <input
+                            type="checkbox"
+                            class="form-check-input filled-in"
+                            id="kids"
+                          />
+                          <label
+                            class="form-check-label small text-capitalize card-link-secondary"
+                            for="kids"
+                            >Kids</label
+                          >
+                        </div>
+
+                        <div class="form-check pl-4 mb-3 pb-1">
+                          <input
+                            type="checkbox"
+                            class="form-check-input filled-in"
+                            id="electronics"
+                          />
+                          <label
+                            class="form-check-label small text-capitalize  card-link-secondary"
+                            for="electronics"
+                            >Electronics</label
+                          >
+                        </div>
+                      </div>
+                    </section>
+                    <!-- Section: Type -->
+
+                    <!-- Section: Price -->
+                    <section class="mb-4">
+
+                      <h6 class="font-weight-bold mb-3">Price</h6>
+                      <hr>
+                      <div class="form-check pl-4 mb-3">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="under25"
+                          name="materialExampleRadios"
+                        />
+                        <label
+                          class="form-check-label small text-uppercase card-link-secondary"
+                          for="under25"
+                          > &lt; $25</label>
+                      </div>
+
+                      <div class="form-check pl-4 mb-3">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="2550"
+                          name="materialExampleRadios"
+                        />
+                        <label
+                          class="form-check-label small text-uppercase card-link-secondary"
+                          for="2550"
+                          >$25 - $50</label
+                        >
+                      </div>
+
+                      <div class="form-check pl-4 mb-3">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="50100"
+                          name="materialExampleRadios"
+                        />
+                        <label
+                          class="form-check-label small text-uppercase card-link-secondary"
+                          for="50100"
+                          >$50 - $100</label
+                        >
+                      </div>
+
+                      <div class="form-check pl-4 mb-3">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="100200"
+                          name="materialExampleRadios"
+                        />
+                        <label
+                          class="form-check-label small text-uppercase card-link-secondary"
+                          for="100200"
+                          >$100 - $200</label
+                        >
+                      </div>
+
+                    </section>
+                    <!-- Section: Price -->
+
+                    <!-- Section: Size -->
+                    <section class="mb-4">
+                      <h6 class="font-weight-bold mb-3">Size</h6>
+                      <hr>
+                      <div class="form-check pl-4 mb-3">
+                        <input
+                          type="checkbox"
+                          class="form-check-input filled-in"
+                          id="extrasmall"
+                        />
+                        <label
+                          class="form-check-label small text-uppercase card-link-secondary"
+                          for="extrasmall"
+                          >XS</label
+                        >
+                      </div>
+
+                      <div class="form-check pl-4 mb-3">
+                        <input
+                          type="checkbox"
+                          class="form-check-input filled-in"
+                          id="small"
+                        />
+                        <label
+                          class="form-check-label small text-uppercase card-link-secondary"
+                          for="small"
+                          >S</label
+                        >
+                      </div>
+
+                      <div class="form-check pl-4 mb-3">
+                        <input
+                          type="checkbox"
+                          class="form-check-input filled-in"
+                          id="medium"
+                        />
+                        <label
+                          class="form-check-label small text-uppercase card-link-secondary"
+                          for="medium"
+                          >M</label
+                        >
+                      </div>
+
+                      <div class="form-check pl-4 mb-3">
+                        <input
+                          type="checkbox"
+                          class="form-check-input filled-in"
+                          id="Large"
+                        />
+                        <label
+                          class="form-check-label small text-uppercase card-link-secondary"
+                          for="Large"
+                          >L</label
+                        >
+                      </div>
+
+                      <div class="form-check pl-4 mb-3">
+                        <input
+                          type="checkbox"
+                          class="form-check-input filled-in"
+                          id="extralarge"
+                        />
+                        <label
+                          class="form-check-label small text-uppercase card-link-secondary"
+                          for="extralarge"
+                          >XL</label
+                        >
+                      </div>
+
+                      <div class="form-check pl-4 mb-3">
+                        <input
+                          type="checkbox"
+                          class="form-check-input filled-in"
+                          id="xxl"
+                        />
+                        <label
+                          class="form-check-label small text-uppercase card-link-secondary"
+                          for="xxl"
+                          >XXL</label
+                        >
+                      </div>
+
+                    </section>
+                    <!-- Section: Size -->
+
+                  </div>
+                  <!-- Section: Filters -->
+
+                </div>
+                <!-- Section: Sidebar -->
+
+                </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+                <div class="col-md-9 col-sm-12 mb-4">
+
+                <!-- Section: Block Content -->
+                <section class="mb-3 border-right">
+
+                  <div class="result-summary">138 Results in total.</div>
+
+                  <hr>
+
+                  <div class="row mt-3">
+
+                    <div class="col-12">
+                      <div class="card mb-3 border-0" style="max-width: 100%; height: 210px;">
+                        <div class="row no-gutters justify-content-between">
+                          <div class="col-md-3 col-sm-3 col-xs-12 bg-gray">
+                            <img src="./images/14.jpg" class="card-img rounded-0" alt="..." style="width: 100%; height: 206px;">
+                          </div>
+                          <div class="col-md-9 col-sm-9 col-xs-12">
+                            <div class="card-body bg-gray">
+                              <div class="d-flex justify-content-between mb-2">
+                                <h5 class="card-title">Set For Men (White Shirt + Belt + Pant)</h5>
+                                <button type="button" class="btn btn-default rounded-0 border search-btn">+</button>
+                              </div>
+
+                              <p class="card-text">Aliquam et nibh sed diam tempor luctus id eget diam. Morbi sit amet sodales dui. Curabitur arcu arcu.</p>
+                              <b>Location:</b><span class="location card-text"> San Francisco, US</span>
+
+                              <div class="d-flex justify-content-between mt-3 card-text-button">
+                                <p class="card-text"><small class="text-muted mt-2">Last updated 3 mins ago</small></p>
+                                <button type="button" class="btn rounded-1 border price-btn">$70</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                  </div>
+
+                </section>
+                <!-- Section: Block Content -->
+
+                <!-- Section: Block Content -->
+                <section class="mb-3 border-right">
+
+                  <hr>
+
+                  <div class="row mt-3">
+
+                    <div class="col-12">
+                      <div class="card mb-3 border-0" style="max-width: 100%; height: 210px;">
+                        <div class="row no-gutters justify-content-between">
+                          <div class="col-md-3 col-sm-3 bg-gray">
+                            <img src="./images/17.jpg" class="card-img rounded-0" alt="..." style="width: 100%; height: 206px;">
+                          </div>
+                          <div class="col-md-9 col-sm-9">
+                            <div class="card-body bg-gray">
+                              <div class="d-flex justify-content-between mb-2">
+                                <h5 class="card-title">Black Eye Clear Lens Glasses</h5>
+                                <button type="button" class="btn btn-default rounded-0 border search-btn">+</button>
+                              </div>
+
+                              <p class="card-text">Aliquam et nibh sed diam tempor luctus id eget diam. Morbi sit amet sodales dui. Curabitur arcu arcu.</p>
+                              <b>Location:</b><span class="location card-text"> San Francisco, US</span>
+
+                              <div class="d-flex justify-content-between mt-3 card-text-button">
+
+                                <p class="card-text"><small class="text-muted mt-2">Last updated 3 mins ago</small></p>
+
+                                <div class="btn-group">
+                                  <button type="button" class="btn rounded border price-btn mr-2">More Details</button>
+                                  <button type="button" class="btn rounded border price-btn">$70</button>
+                                </div>
+
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                  </div>
+
+                </section>
+                <!-- Section: Block Content -->
+
+                <!-- Section: Block Content -->
+                <section class="mb-3 border-right">
+                  <hr>
+                  <div class="row mt-3">
+
+                    <div class="col-12">
+                      <div class="card mb-3 border-0" style="max-width: 100%; height: 210px;">
+                        <div class="row no-gutters justify-content-between">
+                          <div class="col-md-3 col-sm-3 bg-gray">
+                            <img src="./images/7.jpg" class="card-img rounded-0" alt="..." style="width: 100%; height: 206px;">
+                          </div>
+                          <div class="col-md-9 col-sm-9">
+                            <div class="card-body bg-gray">
+                              <div class="d-flex justify-content-between mb-2">
+                                <h5 class="card-title">Fashionable Striped Shirt For Men</h5>
+                                <button type="button" class="btn btn-default rounded-0 border search-btn">+</button>
+                              </div>
+
+                              <p class="card-text">Aliquam et nibh sed diam tempor luctus id eget diam. Morbi sit amet sodales dui. Curabitur arcu arcu.</p>
+                              <b>Location:</b><span class="location card-text"> San Francisco, US</span>
+
+                              <div class="d-flex justify-content-between mt-3 card-text-button">
+                                <p class="card-text"><small class="text-muted mt-2">Last updated 3 mins ago</small></p>
+                                <button type="button" class="btn rounded-1 border price-btn">$70</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                  </div>
+
+                </section>
+                <!-- Section: Block Content -->
+
+                </div>
+              <!--Grid column-->
+
+              <!-- Pagination Column -->
+                <div class="col-md-12 col-sm-12 bs-example">
+                    <div class="bottom-pagination">
+                      <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-center">
+                          <li class="page-item pr-2"><a class="page-link rounded-0" href="#">1</a></li>
+                          <li class="page-item pr-2"><a class="page-link" href="#">2</a></li>
+                          <li class="page-item pr-2"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item border-right"><a class="page-link" href="#">4</a></li>
+                          <li class="page-item ellipsis"><a class="page-link border-0" href="#">...</a></li>
+                          <li class="page-item"><a class="page-link rounded-0" href="#">7</a></li>
+                        </ul>
+                      </nav>
+                    </div>
+                </div>
+              <!-- Pagination Column -->
+
+            </div>
+            <!--Grid row-->
+
+          </div>
+
+        </main>
+        <!--Main layout-->
+
+        <!-- Footer Section -->
+    <footer class="site-footer border-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-sm-12 col-md-6 about-content">
+            <h6 class="text-center">About</h6>
+            <p class="text-justify pt-1">
+              <i>Splendid</i> is Nigeria's Biggest Online Mall that offers offers the widest assortment at an unbeatable price,
+              here you can buy anything you want online at the Best Prices.
+              Search, Order on our Platform,
+              Pay on Delivery.
+              You can Access 100% Genuine Products from Local &
+              International Vendors.</p>
+          </div>
+
+          <div class="col-xs-6 col-md-3 category-content">
+            <h6>Categories</h6>
+            <hr>
+            <ul class="footer-links">
+              <li><a href="#">Accessories</a></li>
+              <li><a href="#">Men</a></li>
+              <li><a href="#">Women</a></li>
+              <li><a href="#">Kids</a></li>
+              <li><a href="#">Shoes</a></li>
+              <li><a href="#">Decorations</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3 navigation-content">
+            <h6>Navigation</h6>
+            <hr>
+            <ul class="footer-links">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Login</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Register</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+        <hr>
+
+      </div>
+
+      <div class="container">
+
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by
+                  <a href="#">Splendid</a>.
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+              <ul class="social-icons">
+                  <li><a class="facebook" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a class="twitter" href="#"><i class="fab fa-twitter"></i></a></li>
+                  <li><a class="dribbble" href="#"><i class="fab fa-dribbble"></i></a></li>
+                  <li><a class="linkedin" href="#"><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+    </footer>
+    <!-- Footer Section -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
