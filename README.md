@@ -9,7 +9,7 @@
 
 ## Project Description Video
 
-🔗 [Loom Video Link](https://www.loom.com/share/f9b8ba20409944a4be63bd06378c44d6)
+🔗 [Loom Video Link](https://www.loom.com/share/bb7d669c1eb84e16bf8917faeca57676)
 
 ## Live demo
 
@@ -21,7 +21,7 @@
 - CSS3
 - Font awesome
 - Bootstrap 4
-- Carousel from [Flickity](https://flickity.metafizzy.co)
+- Carousel from [Slick](https://kenwheeler.github.io/slick/)
 - Image source from [unsplash.com](https://unsplash.com/)
 
 
