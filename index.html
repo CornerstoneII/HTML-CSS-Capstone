@@ -10,8 +10,10 @@
 
     <link rel="stylesheet" href="./css/style.css">
 
-    <!-- Flickity Carousel CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <!-- Slick Carousel CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
 
     <!-- Font Awesome CDN -->
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
@@ -19,32 +21,38 @@
 <body>
     <!-- Site Navigation Header -->
     <header>
-        <nav class="navbar navbar-dark bg-dark navbar-expand"  role="navigation">
+        <nav class="navbar navbar-dark bg-dark navbar-expand">
           <div class="container">
 
             <div class="navbar-collapse collapse">
 
               <ul class="navbar-nav mr-auto justify-content-between w-7">
 
-                <li><a class="navbar-brand" href="#">Splendid!</a></li>
+                <li>
+                    <a class="navbar-brand" href="#">
+                        Splendid!
+                    </a>
+                </li>
 
-                <li class="nav-item pt-2">
+                <li class="nav-item pt-2 pt-md-1">
                   <a href="#">
-                    <i class="fas fa-home pr-1"></i>Home</a>
+                    <i class="nav-icon fas fa-home pr-1"></i>Home
+                  </a>
                 </li>
 
-                <li class="nav-item pt-2">
-                <a href="#">
-                  <i class="fas fa-boxes pr-1"></i>Collections</a>
+                <li class="nav-item pt-2 pt-md-1">
+                    <a href="#">
+                    <i class="nav-icon fas fa-boxes pr-1"></i>Collections
+                    </a>
                 </li>
 
-                <li class="nav-item pt-2">
-                <a href="#">
-                    <i class="fas fa-shopping-cart pr-1"></i>Purchase
-                </a>
+                <li class="nav-item pt-2 pt-md-1">
+                    <a href="#">
+                        <i class="nav-icon fas fa-shopping-cart pr-1"></i>Purchase
+                    </a>
                 </li>
 
-                <li><button type="button" class="d-md-block btn btn-danger navbar-btn d-none d-sm-block">Post An Ad</button></li>
+                <li><button type="button" class="d-md-block btn btn-danger navbar-btn d-none d-sm-block text-uppercase ad-btn">Post An Ad</button></li>
 
               </ul>
 
@@ -56,13 +64,13 @@
 
                 <li class="nav-item">
                     <a class="nav-item" href="#">
-                     <i class='fas fa-envelope' style='color: #888888;'></i>
+                     <i class='fas fa-envelope'></i>
                       </a>
                 </li>
 
                 <li class="nav-item">
                     <a class="nav-item" href="#">
-                        <i class='fas fa-user-circle' style='color:#888888;'></i>
+                        <i class='fas fa-user-circle'></i>
                     </a>
                 </li>
 
@@ -73,969 +81,1022 @@
          </div>
        </nav>
     </header>
+    <!-- Site Navigation Header -->
 
-    <!-- Site Main Section -->
-    <main class="pb-5">
-
-        <!-- Search Section -->
-        <section class="jumbotron text-center rounded-0">
-            <div class="container">
-              <form>
-                <div class="btn-group">
-
-                  <button type="button" class="btn button rounded-0 pl-0 inline"  data-toggle="dropdown"> <i class="fas fa-caret-down"></i> Category</button>
-                  <div class="dropdown-menu">
-                    <a href="#home">Men</a>
-                    <div class="dropdown-divider"></div>
-                    <a href="#about">Women</a>
-                    <div class="dropdown-divider"></div>
-                    <a href="#contact">Jewelery</a>
-                  </div>
-
-                  <div class="div pl-1"><input style="border: 0 none transparent" type="text" class="form-control rounded-0" placeholder="Enter Product Name" name="productName"></div>
-
-                  <div class="div pl-0 mr-2"><input style="border: 0 none transparent" type="text" class="form-control rounded-0" placeholder="Enter Price" name="productPrice"></div>
-
-                  <button type="button" class="btn button rounded-0">Search</button>
-
-                </div>
-              </form>
-            </div>
-        </section>
-
-        <!-- Category Section Section -->
-        <div class="category-section">
-
-            <!-- Electronics Category -->
-            <div class="category-icon pl-4 pb-4 pt-5"><i class='fas fa-tv pr-3' style='font-size:20px;'></i> <span>Electronics</span> (Phones, Camera, Computer, Headphones.)</div>
-            <div class="carousel-wrapper">
-              <div class="carousel cat-carousel" data-flickity='{ "pageDots": false, "freeScroll": true, "contain": true, "watchCSS": true }'>
-
-                <!-- Item 1 -->
-                <div class="cat-carousel-cell item1">
-                  <div class="card rounded-0">
-                    <img src="./images/27.jpg" style="width: 100%; height: auto;" alt="Product Image" />
-                    <div class="card-body">
-                      <h6 class="card-title">Extra Bass Wireless Headphones</h6>
-
-                      <p class="card-text"><small class="text-muted"><b>New</b></small></p>
-                      <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
-                        <div style="display: none;">
-                          <ul class="list-group custom-popover">
-                            <li class="list-group-item">Send Message</li>
-                            <li class="list-group-item">Add To Collection</li>
-                            <li class="list-group-item">More Details</li>
+    <!-- Main Section -->
+    <main>
+      <!-- Jumbotron Section -->
+      <section class="jumbotron text-center jumbotron-fluid">
+        <div class="container pt-3">
+          <h1 class="display-4 text-uppercase jumbotron-uppercase">Splendid</h1>
+          <p class="lead">Buying and Selling Couldnt' be simpler than this!</p>
+          <div class="row-fluid justify-content-center ">
+            <div class="form-group">
+              <div class="input-group input-group-lg">
+                <div class="input-group-btn bs-dropdown-to-select-group">
+                          <button type="button" class="btn btn-cat btn-main btn-lg btn-default bs-dropdown-to-select bg-white border-0 rounded-0" data-toggle="dropdown">
+                              <span><i class="fa fa-caret-down" aria-hidden="true"></i></span>
+                              <span data-bind="bs-drp-sel-label">All Categories</span>
+                              <input type="hidden" name="selected_value" data-bind="bs-drp-sel-value" value="">
+                              <span class="sr-only">Toggle Dropdown</span>
+                          </button>
+                          <ul class="dropdown-menu" role="menu">
+                              <li data-value="1"><a href="#">Men</a></li>
+                              <li data-value="2"><a href="#">Kids</a></li>
+                              <li data-value="3"><a href="#">Women</a></li>
                           </ul>
-                        </div>
-                      </div>
-                      <p class="text-muted pt-3"><b>$70</b></p>
-                      </div>
-                    </div>
-                  </div>
                 </div>
-
-                <!-- Item 2 -->
-                <div class="cat-carousel-cell item2">
-                  <div class="card rounded-0">
-                    <img src="./images/28.jpg" style="width: 100%; height: auto;" alt="Product Image" />
-                    <div class="card-body">
-                      <h6 class="card-title">Wireless X-Box Gamepad Controller</h6>
-
-                      <p class="card-text"><small class="text-muted"><b>New</b></small></p>
-                      <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
-                        <div style="display: none;">
-                          <ul class="list-group custom-popover">
-                            <li class="list-group-item">Send Message</li>
-                            <li class="list-group-item">Add To Collection</li>
-                            <li class="list-group-item">More Details</li>
-                          </ul>
-                        </div>
-                      </div>
-                      <p class="text-muted pt-3"><b>$70</b></p>
-                      </div>
-                    </div>
-                  </div>
+                <input type="text" class="form-control rounded-0  shadow-none ml" placeholder="Product Name" name="productName">
+                <input type="text" class="form-control rounded-0  shadow-none" placeholder="Product Price" name="productPrice">
+                <div class="input-group-btn">
+                  <button id="btn-search" class="btn btn-main btn-search btn-lg btn-default rounded-0" type="button">Search</button>
                 </div>
-
-                <!-- Item 3 -->
-                <div class="cat-carousel-cell item3">
-                  <div class="card rounded-0">
-                    <img src="./images/29.jpg"  style="width: 100%; height: auto;" alt="Product Image"/>
-                    <div class="card-body">
-                      <h6 class="card-title">Sony Playstation 1 Slim Console</h6>
-
-                      <p class="card-text"><small class="text-muted"><b>New</b></small></p>
-                      <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
-                        <div style="display: none;">
-                          <ul class="list-group custom-popover">
-                            <li class="list-group-item">Send Message</li>
-                            <li class="list-group-item">Add To Collection</li>
-                            <li class="list-group-item">More Details</li>
-                          </ul>
-                        </div>
-                      </div>
-                      <p class="text-muted pt-3"><b>$70</b></p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Item 4 -->
-                <div class="cat-carousel-cell item4">
-                  <div class="card rounded-0">
-                    <img src="./images/30.jpg"  style="width: 100%; height: auto;" alt="Product Image"/>
-                    <div class="card-body">
-                      <h6 class="card-title">Apple iPhone 6 Plus 64GB</h6>
-
-                      <p class="card-text"><small class="text-muted"><b>New</b></small></p>
-                      <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
-                        <div style="display: none;">
-                          <ul class="list-group custom-popover">
-                            <li class="list-group-item">Send Message</li>
-                            <li class="list-group-item">Add To Collection</li>
-                            <li class="list-group-item">More Details</li>
-                          </ul>
-                        </div>
-                      </div>
-                      <p class="text-muted pt-3"><b>$70</b></p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Item 5 -->
-                <div class="cat-carousel-cell item5">
-                  <div class="card rounded-0">
-                    <img src="./images/31.jpg"  style="width: 100%; height: auto;" alt="Product Image"/>
-                    <div class="card-body">
-                      <h6 class="card-title">Slim Mini Wireless (Bluetooth) Keyboard</h6>
-
-                      <p class="card-text"><small class="text-muted"><b>New</b></small></p>
-                      <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
-                        <div style="display: none;">
-                          <ul class="list-group custom-popover">
-                            <li class="list-group-item">Send Message</li>
-                            <li class="list-group-item">Add To Collection</li>
-                            <li class="list-group-item">More Details</li>
-                          </ul>
-                        </div>
-                      </div>
-                      <p class="text-muted pt-3"><b>$70</b></p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Item 6 -->
-                <div class="cat-carousel-cell item6">
-                  <div class="card rounded-0">
-                    <img src="./images/32.jpg"  style="width: 100%; height: auto;" alt="Product Image"/>
-                    <div class="card-body">
-                      <h6 class="card-title">XIOAMI Mi Portable Bluetooth Speaker</h6>
-
-                      <p class="card-text"><small class="text-muted"><b>New</b></small></p>
-                      <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
-                        <div style="display: none;">
-                          <ul class="list-group custom-popover">
-                            <li class="list-group-item">Send Message</li>
-                            <li class="list-group-item">Add To Collection</li>
-                            <li class="list-group-item">More Details</li>
-                          </ul>
-                        </div>
-                      </div>
-                      <p class="text-muted pt-3"><b>$70</b></p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Item 7 -->
-                <div class="cat-carousel-cell item6">
-                    <div class="card rounded-0">
-                      <img src="./images/33.jpg"  style="width: 100%; height: auto;" alt="Product Image"/>
-                      <div class="card-body">
-                        <h6 class="card-title">Apple iPhone 11 Pro Max (4GB RAM, 256GB ROM)</h6>
-
-                        <p class="card-text"><small class="text-muted"><b>New</b></small></p>
-                        <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                          <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
-                          <div style="display: none;">
-                            <ul class="list-group custom-popover">
-                              <li class="list-group-item">Send Message</li>
-                              <li class="list-group-item">Add To Collection</li>
-                              <li class="list-group-item">More Details</li>
-                            </ul>
-                          </div>
-                        </div>
-                        <p class="text-muted pt-3"><b>$70</b></p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                <!-- Item 8 -->
-                <div class="cat-carousel-cell item6">
-                    <div class="card rounded-0">
-                      <img src="./images/34.jpg"  style="width: 100%; height: auto;" alt="Product Image"/>
-                      <div class="card-body">
-                        <h6 class="card-title">Apple iPad Pro 10.5 (256GB ROM, 4GB RAM)</h6>
-
-                        <p class="card-text"><small class="text-muted"><b>New</b></small></p>
-                        <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                          <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
-                          <div style="display: none;">
-                            <ul class="list-group custom-popover">
-                              <li class="list-group-item">Send Message</li>
-                              <li class="list-group-item">Add To Collection</li>
-                              <li class="list-group-item">More Details</li>
-                            </ul>
-                          </div>
-                        </div>
-                        <p class="text-muted pt-3"><b>$70</b></p>
-                        </div>
-                      </div>
-                    </div>
-                </div>
-
-                  <!-- Item 9 -->
-                <div class="cat-carousel-cell item6">
-                    <div class="card rounded-0">
-                      <img src="./images/35.jpg"  style="width: 100%; height: auto;" alt="Product Image"/>
-                      <div class="card-body">
-                        <h6 class="card-title">ASUS M409(1TB HDD, 16GB 2400MHz RAM)</h6>
-
-                        <p class="card-text"><small class="text-muted"><b>New</b></small></p>
-                        <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                          <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
-                          <div style="display: none;">
-                            <ul class="list-group custom-popover">
-                              <li class="list-group-item">Send Message</li>
-                              <li class="list-group-item">Add To Collection</li>
-                              <li class="list-group-item">More Details</li>
-                            </ul>
-                          </div>
-                        </div>
-                        <p class="text-muted pt-3"><b>$70</b></p>
-                        </div>
-                      </div>
-                    </div>
-                </div>
-
-                  <!-- Item 10 -->
-                <div class="cat-carousel-cell item6">
-                    <div class="card rounded-0">
-                      <img src="./images/36.jpg"  style="width: 100%; height: auto;" alt="Product Image"/>
-                      <div class="card-body">
-                        <h6 class="card-title">Apple iMac Core I5 - 8GB RAM 1TB HDD</h6>
-
-                        <p class="card-text"><small class="text-muted"><b>New</b></small></p>
-                        <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                          <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
-                          <div style="display: none;">
-                            <ul class="list-group custom-popover">
-                              <li class="list-group-item">Send Message</li>
-                              <li class="list-group-item">Add To Collection</li>
-                              <li class="list-group-item">More Details</li>
-                            </ul>
-                          </div>
-                        </div>
-                        <p class="text-muted pt-3"><b>$70</b></p>
-                        </div>
-                      </div>
-                    </div>
-                </div>
-
-                  <!-- Item 11 -->
-                <div class="cat-carousel-cell item6">
-                    <div class="card rounded-0">
-                      <img src="./images/37.jpg" class="img-fluid"  style="width: 100%; height: auto;" alt="Product Image"/>
-                      <div class="card-body">
-                        <h6 class="card-title">LG 4K Smart TV "65" + Magic Remote</h6>
-
-                        <p class="card-text"><small class="text-muted"><b>New</b></small></p>
-                        <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                          <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
-                          <div style="display: none;">
-                            <ul class="list-group custom-popover">
-                              <li class="list-group-item">Send Message</li>
-                              <li class="list-group-item">Add To Collection</li>
-                              <li class="list-group-item">More Details</li>
-                            </ul>
-                          </div>
-                        </div>
-                        <p class="text-muted pt-3"><b>$70</b></p>
-                        </div>
-                      </div>
-                    </div>
-                </div>
-
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <!-- Jumbotron Section -->
 
-            <!-- Fashion Category -->
-            <div class="category-icon pl-4 pb-4 pt-5"><i class='fas fa-tshirt pr-3' style='font-size:20px;'></i> <span>Fashion</span> (Skirts, Gowns, Pants, Accessories, Shirts.)</div>
-            <div class="carousel-wrapper">
-              <div class="carousel cat-carousel" data-flickity='{ "pageDots": false, "freeScroll": true, "contain": true, "watchCSS": true }'>
+      <!-- Product Category -->
+      <div class="category">
+        <!-- Electronics Category -->
+        <div class="category-icon pl-4 pb-2 pt-5"><i class='fas fa-tv pr-3' style='font-size:20px;'></i> <span class="product-category pr-3">Electronics</span> (Phones, Camera, Computer, Headphones.) <span class="more-right">View All</span></div>
+        <hr>
+        <div class="container cat-container">
 
-                <!-- Item 1 -->
-                <div class="cat-carousel-cell item1">
-                  <div class="card rounded-0">
-                    <img src="./images/14.jpg" style="width: 100%; height: auto;" alt="Product Image" />
-                    <div class="card-body">
-                      <h6 class="card-title">Set For Men (White Shirt + Belt + Pant)</h6>
+            <div class="slider">
 
-                      <p class="card-text"><small class="text-muted"><b>New</b></small></p>
-                      <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
-                        <div style="display: none;">
-                          <ul class="list-group custom-popover">
-                            <li class="list-group-item">Send Message</li>
-                            <li class="list-group-item">Add To Collection</li>
-                            <li class="list-group-item">More Details</li>
-                          </ul>
+                        <div class="card rounded-0" style="height: 370px;">
+                            <img class="card-img-top rounded-0" src="./images/27.jpg" alt="Card image cap"  style="width: 100%; height: auto;">
+                            <div class="card-body">
+                              <h5 class="card-title">Extra Bass Wireless Headphones</h5>
+                              <p class="card-text">New</p>
+                              <small>From: </small><span class="location">San Francisco, US</span>
+                              <div class="d-flex justify-content-between pt-3">
+
+                                <div class="btn-group">
+                                  <button type="button" class="btn btn-default rounded-0 border" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
+
+                                  <div style="display: none;">
+                                    <ul class="list-group custom-popover">
+                                      <li class="list-group-item">Send Message</li>
+                                      <li class="list-group-item">Add To Collection</li>
+                                      <li class="list-group-item">More Details</li>
+                                    </ul>
+                                  </div>
+                                </div>
+
+                                <p class="text-muted pt-3"><b>$70</b></p>
+                              </div>
+
+                            </div>
                         </div>
-                      </div>
-                      <p class="text-muted pt-3"><b>$70</b></p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
 
-                <!-- Item 2 -->
-                <div class="cat-carousel-cell item2">
-                  <div class="card rounded-0">
-                    <img src="./images/15.jpg" style="width: 100%; height: auto;" alt="Product Image" />
-                    <div class="card-body">
-                      <h6 class="card-title">Smart Stock Jeans For Women</h6>
+                        <div class="card rounded-0" style="height: 370px;">
+                            <img class="card-img-top rounded-0" src="./images/28.jpg" alt="Card image cap"  style="width: 100%; height: auto;">
+                            <div class="card-body">
+                              <h5 class="card-title">Wireless X-Box Gamepad Controller</h5>
+                              <p class="card-text">New</p>
+                              <small>From: </small><span class="location">San Francisco, US</span>
+                              <div class="d-flex justify-content-between pt-3">
 
-                      <p class="card-text"><small class="text-muted"><b>New</b></small></p>
-                      <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
-                        <div style="display: none;">
-                          <ul class="list-group custom-popover">
-                            <li class="list-group-item">Send Message</li>
-                            <li class="list-group-item">Add To Collection</li>
-                            <li class="list-group-item">More Details</li>
-                          </ul>
+                                <div class="btn-group">
+                                  <button type="button" class="btn btn-default rounded-0 border" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
+
+                                  <div style="display: none;">
+                                    <ul class="list-group custom-popover">
+                                      <li class="list-group-item">Send Message</li>
+                                      <li class="list-group-item">Add To Collection</li>
+                                      <li class="list-group-item">More Details</li>
+                                    </ul>
+                                  </div>
+                                </div>
+
+                                <p class="text-muted pt-3"><b>$70</b></p>
+                              </div>
+
+                            </div>
                         </div>
-                      </div>
-                      <p class="text-muted pt-3"><b>$70</b></p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
 
-                <!-- Item 3 -->
-                <div class="cat-carousel-cell item3">
-                  <div class="card rounded-0">
-                    <img src="./images/17.jpg"  style="width: 100%; height: auto;" alt="Product Image"/>
-                    <div class="card-body">
-                      <h6 class="card-title">Black Eye Clear Lens Glasses</h6>
+                        <div class="card rounded-0" style="height: 370px;">
+                            <img class="card-img-top rounded-0" src="./images/29.jpg" alt="Card image cap"  style="width: 100%; height: auto;">
+                            <div class="card-body">
+                              <h5 class="card-title">Sony Playstation 1 Slim Console</h5>
+                              <p class="card-text">New</p>
+                              <small>From: </small><span class="location">San Francisco, US</span>
+                              <div class="d-flex justify-content-between pt-3">
 
-                      <p class="card-text"><small class="text-muted"><b>New</b></small></p>
-                      <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
-                        <div style="display: none;">
-                          <ul class="list-group custom-popover">
-                            <li class="list-group-item">Send Message</li>
-                            <li class="list-group-item">Add To Collection</li>
-                            <li class="list-group-item">More Details</li>
-                          </ul>
+                                <div class="btn-group">
+                                  <button type="button" class="btn btn-default rounded-0 border" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
+
+                                  <div style="display: none;">
+                                    <ul class="list-group custom-popover">
+                                      <li class="list-group-item">Send Message</li>
+                                      <li class="list-group-item">Add To Collection</li>
+                                      <li class="list-group-item">More Details</li>
+                                    </ul>
+                                  </div>
+                                </div>
+
+                                <p class="text-muted pt-3"><b>$70</b></p>
+                              </div>
+
+                            </div>
                         </div>
-                      </div>
-                      <p class="text-muted pt-3"><b>$70</b></p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
 
-                <!-- Item 4 -->
-                <div class="cat-carousel-cell item4">
-                  <div class="card rounded-0">
-                    <img src="./images/4.jpg"  style="width: 100%; height: auto;" alt="Product Image"/>
-                    <div class="card-body">
-                      <h6 class="card-title">Leather Small Bag One Shoulder Black</h6>
+                        <div class="card rounded-0" style="height: 370px;">
+                            <img class="card-img-top rounded-0" src="./images/30.jpg" alt="Card image cap"  style="width: 100%; height: auto;">
+                            <div class="card-body">
+                              <h5 class="card-title">Apple iPhone 6 Plus 64GB</h5>
+                              <p class="card-text">New</p>
+                              <small>From: </small><span class="location">San Francisco, US</span>
+                              <div class="d-flex justify-content-between pt-3">
 
-                      <p class="card-text"><small class="text-muted"><b>New</b></small></p>
-                      <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
-                        <div style="display: none;">
-                          <ul class="list-group custom-popover">
-                            <li class="list-group-item">Send Message</li>
-                            <li class="list-group-item">Add To Collection</li>
-                            <li class="list-group-item">More Details</li>
-                          </ul>
+                                <div class="btn-group">
+                                  <button type="button" class="btn btn-default rounded-0 border" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
+
+                                  <div style="display: none;">
+                                    <ul class="list-group custom-popover">
+                                      <li class="list-group-item">Send Message</li>
+                                      <li class="list-group-item">Add To Collection</li>
+                                      <li class="list-group-item">More Details</li>
+                                    </ul>
+                                  </div>
+                                </div>
+
+                                <p class="text-muted pt-3"><b>$70</b></p>
+                              </div>
+
+                            </div>
                         </div>
-                      </div>
-                      <p class="text-muted pt-3"><b>$70</b></p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
 
-                <!-- Item 5 -->
-                <div class="cat-carousel-cell item5">
-                  <div class="card rounded-0">
-                    <img src="./images/7.jpg"  style="width: 100%; height: auto;" alt="Product Image"/>
-                    <div class="card-body">
-                      <h6 class="card-title">Fashionable Striped Shirt For Men</h6>
+                        <div class="card rounded-0" style="height: 370px;">
+                            <img class="card-img-top rounded-0" src="./images/31.jpg" alt="Card image cap"  style="width: 100%; height: auto;">
+                            <div class="card-body">
+                              <h5 class="card-title">Slim Mini Wireless (Bluetooth) Keyboard</h5>
+                              <p class="card-text">New</p>
+                              <small>From: </small><span class="location">San Francisco, US</span>
+                              <div class="d-flex justify-content-between pt-3">
 
-                      <p class="card-text"><small class="text-muted"><b>New</b></small></p>
-                      <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
-                        <div style="display: none;">
-                          <ul class="list-group custom-popover">
-                            <li class="list-group-item">Send Message</li>
-                            <li class="list-group-item">Add To Collection</li>
-                            <li class="list-group-item">More Details</li>
-                          </ul>
+                                <div class="btn-group">
+                                  <button type="button" class="btn btn-default rounded-0 border" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
+
+                                  <div style="display: none;">
+                                    <ul class="list-group custom-popover">
+                                      <li class="list-group-item">Send Message</li>
+                                      <li class="list-group-item">Add To Collection</li>
+                                      <li class="list-group-item">More Details</li>
+                                    </ul>
+                                  </div>
+                                </div>
+
+                                <p class="text-muted pt-3"><b>$70</b></p>
+                              </div>
+
+                            </div>
                         </div>
-                      </div>
-                      <p class="text-muted pt-3"><b>$70</b></p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
 
-                <!-- Item 6 -->
-                <div class="cat-carousel-cell item6">
-                  <div class="card rounded-0">
-                    <img src="./images/8.jpg"  style="width: 100%; height: auto;" alt="Product Image"/>
-                    <div class="card-body">
-                      <h6 class="card-title">Floral Print Boho Casual Party Dress</h6>
+                        <div class="card rounded-0" style="height: 370px;">
+                            <img class="card-img-top rounded-0" src="./images/32.jpg" alt="Card image cap"  style="width: 100%; height: auto;">
+                            <div class="card-body">
+                              <h5 class="card-title">XIOAMI Mi Portable Bluetooth Speaker</h5>
+                              <p class="card-text">New</p>
+                              <small>From: </small><span class="location">San Francisco, US</span>
+                              <div class="d-flex justify-content-between pt-3">
 
-                      <p class="card-text"><small class="text-muted"><b>New</b></small></p>
-                      <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
-                        <div style="display: none;">
-                          <ul class="list-group custom-popover">
-                            <li class="list-group-item">Send Message</li>
-                            <li class="list-group-item">Add To Collection</li>
-                            <li class="list-group-item">More Details</li>
-                          </ul>
+                                <div class="btn-group">
+                                  <button type="button" class="btn btn-default rounded-0 border" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
+
+                                  <div style="display: none;">
+                                    <ul class="list-group custom-popover">
+                                      <li class="list-group-item">Send Message</li>
+                                      <li class="list-group-item">Add To Collection</li>
+                                      <li class="list-group-item">More Details</li>
+                                    </ul>
+                                  </div>
+                                </div>
+
+                                <p class="text-muted pt-3"><b>$70</b></p>
+                              </div>
+
+                            </div>
                         </div>
-                      </div>
-                      <p class="text-muted pt-3"><b>$70</b></p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
 
-                <!-- Item 7 -->
-                <div class="cat-carousel-cell item6">
-                    <div class="card rounded-0">
-                      <img src="./images/9.jpg"  style="width: 100%; height: auto;" alt="Product Image"/>
-                      <div class="card-body">
-                        <h6 class="card-title">Floral Print (Beach Casual Party Dress)</h6>
+                        <div class="card rounded-0" style="height: 370px;">
+                          <img class="card-img-top rounded-0" src="./images/33.jpg" alt="Card image cap"  style="width: 100%; height: auto;">
+                          <div class="card-body">
+                            <h5 class="card-title">Apple iPhone 11 Pro Max (4GB RAM, 256GB ROM)</h5>
+                            <p class="card-text">New</p>
+                            <small>From: </small><span class="location">San Francisco, US</span>
+                            <div class="d-flex justify-content-between pt-3">
 
-                        <p class="card-text"><small class="text-muted"><b>New</b></small></p>
-                        <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                          <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
-                          <div style="display: none;">
-                            <ul class="list-group custom-popover">
-                              <li class="list-group-item">Send Message</li>
-                              <li class="list-group-item">Add To Collection</li>
-                              <li class="list-group-item">More Details</li>
-                            </ul>
+                              <div class="btn-group">
+                                <button type="button" class="btn btn-default rounded-0 border" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
+
+                                <div style="display: none;">
+                                  <ul class="list-group custom-popover">
+                                    <li class="list-group-item">Send Message</li>
+                                    <li class="list-group-item">Add To Collection</li>
+                                    <li class="list-group-item">More Details</li>
+                                  </ul>
+                                </div>
+                              </div>
+
+                              <p class="text-muted pt-3"><b>$70</b></p>
+                            </div>
+
                           </div>
                         </div>
-                        <p class="text-muted pt-3"><b>$70</b></p>
+
+                        <div class="card rounded-0" style="height: 370px;">
+                            <img class="card-img-top rounded-0" src="./images/34.jpg" alt="Card image cap"  style="width: 100%; height: auto;">
+                            <div class="card-body">
+                              <h5 class="card-title">Apple iPad Pro 10.5 (256GB ROM, 4GB RAM)</h5>
+                              <p class="card-text">New</p>
+                              <small>From: </small><span class="location">San Francisco, US</span>
+                              <div class="d-flex justify-content-between pt-3">
+
+                                <div class="btn-group">
+                                  <button type="button" class="btn btn-default rounded-0 border" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
+
+                                  <div style="display: none;">
+                                    <ul class="list-group custom-popover">
+                                      <li class="list-group-item">Send Message</li>
+                                      <li class="list-group-item">Add To Collection</li>
+                                      <li class="list-group-item">More Details</li>
+                                    </ul>
+                                  </div>
+                                </div>
+
+                                <p class="text-muted pt-3"><b>$70</b></p>
+                              </div>
+
+                            </div>
                         </div>
-                      </div>
-                    </div>
-                  </div>
 
-                <!-- Item 8 -->
-                <div class="cat-carousel-cell item6">
-                    <div class="card rounded-0">
-                      <img src="./images/10.jpg"  style="width: 100%; height: auto;" alt="Product Image"/>
-                      <div class="card-body">
-                        <h6 class="card-title">Smart Men Royal Suit with Pants</h6>
+                        <div class="card rounded-0" style="height: 370px;">
+                            <img class="card-img-top rounded-0" src="./images/35.jpg" alt="Card image cap"  style="width: 100%; height: auto;">
+                            <div class="card-body">
+                              <h5 class="card-title">ASUS M409(1TB HDD, 16GB 2400MHz RAM)</h5>
+                              <p class="card-text">New</p>
+                              <small>From: </small><span class="location">San Francisco, US</span>
+                              <div class="d-flex justify-content-between pt-3">
 
-                        <p class="card-text"><small class="text-muted"><b>New</b></small></p>
-                        <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                          <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
-                          <div style="display: none;">
-                            <ul class="list-group custom-popover">
-                              <li class="list-group-item">Send Message</li>
-                              <li class="list-group-item">Add To Collection</li>
-                              <li class="list-group-item">More Details</li>
-                            </ul>
-                          </div>
+                                <div class="btn-group">
+                                  <button type="button" class="btn btn-default rounded-0 border" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
+
+                                  <div style="display: none;">
+                                    <ul class="list-group custom-popover">
+                                      <li class="list-group-item">Send Message</li>
+                                      <li class="list-group-item">Add To Collection</li>
+                                      <li class="list-group-item">More Details</li>
+                                    </ul>
+                                  </div>
+                                </div>
+
+                                <p class="text-muted pt-3"><b>$70</b></p>
+                              </div>
+
+                            </div>
                         </div>
-                        <p class="text-muted pt-3"><b>$70</b></p>
+
+                        <div class="card rounded-0" style="height: 370px;">
+                            <img class="card-img-top rounded-0" src="./images/36.jpg" alt="Card image cap"  style="width: 100%; height: auto;">
+                            <div class="card-body">
+                              <h5 class="card-title">Apple iMac Core I5 - 8GB RAM 1TB HDD</h5>
+                              <p class="card-text">New</p>
+                              <small>From: </small><span class="location">San Francisco, US</span>
+                              <div class="d-flex justify-content-between pt-3">
+
+                                <div class="btn-group">
+                                  <button type="button" class="btn btn-default rounded-0 border" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
+
+                                  <div style="display: none;">
+                                    <ul class="list-group custom-popover">
+                                      <li class="list-group-item">Send Message</li>
+                                      <li class="list-group-item">Add To Collection</li>
+                                      <li class="list-group-item">More Details</li>
+                                    </ul>
+                                  </div>
+                                </div>
+
+                                <p class="text-muted pt-3"><b>$70</b></p>
+                              </div>
+
+                            </div>
                         </div>
-                      </div>
-                    </div>
-                </div>
 
-                  <!-- Item 9 -->
-                <div class="cat-carousel-cell item6">
-                    <div class="card rounded-0">
-                      <img src="./images/12.jpg"  style="width: 100%; height: auto;" alt="Product Image"/>
-                      <div class="card-body">
-                        <h6 class="card-title">Apple Series Smart Watch</h6>
+                        <div class="card rounded-0" style="height: 370px;">
+                            <img class="card-img-top rounded-0" src="./images/37.jpg" alt="Card image cap"  style="width: 100%; height: auto;">
+                            <div class="card-body">
+                              <h5 class="card-title">LG 4K Smart TV "65" + Magic Remote</h5>
+                              <p class="card-text">New</p>
+                              <small>From: </small><span class="location">San Francisco, US</span>
+                              <div class="d-flex justify-content-between pt-3">
 
-                        <p class="card-text"><small class="text-muted"><b>New</b></small></p>
-                        <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                          <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
-                          <div style="display: none;">
-                            <ul class="list-group custom-popover">
-                              <li class="list-group-item">Send Message</li>
-                              <li class="list-group-item">Add To Collection</li>
-                              <li class="list-group-item">More Details</li>
-                            </ul>
-                          </div>
+                                <div class="btn-group">
+                                  <button type="button" class="btn btn-default rounded-0 border" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
+
+                                  <div style="display: none;">
+                                    <ul class="list-group custom-popover">
+                                      <li class="list-group-item">Send Message</li>
+                                      <li class="list-group-item">Add To Collection</li>
+                                      <li class="list-group-item">More Details</li>
+                                    </ul>
+                                  </div>
+                                </div>
+
+                                <p class="text-muted pt-3"><b>$70</b></p>
+                              </div>
+
+                            </div>
                         </div>
-                        <p class="text-muted pt-3"><b>$70</b></p>
-                        </div>
-                      </div>
-                    </div>
-                </div>
-
-                  <!-- Item 10 -->
-                <div class="cat-carousel-cell item6">
-                    <div class="card rounded-0">
-                      <img src="./images/18.jpg"  style="width: 100%; height: auto;" alt="Product Image"/>
-                      <div class="card-body">
-                        <h6 class="card-title">Portable Plaid Leather Handbag - Grey</h6>
-
-                        <p class="card-text"><small class="text-muted"><b>New</b></small></p>
-                        <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                          <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
-                          <div style="display: none;">
-                            <ul class="list-group custom-popover">
-                              <li class="list-group-item">Send Message</li>
-                              <li class="list-group-item">Add To Collection</li>
-                              <li class="list-group-item">More Details</li>
-                            </ul>
-                          </div>
-                        </div>
-                        <p class="text-muted pt-3"><b>$70</b></p>
-                        </div>
-                      </div>
-                    </div>
-                </div>
-
-                  <!-- Item 11 -->
-                <div class="cat-carousel-cell item6">
-                    <div class="card rounded-0">
-                      <img src="./images/19.jpg"  style="width: 100%; height: auto;" alt="Product Image"/>
-                      <div class="card-body">
-                        <h6 class="card-title">Colourful Kids Wear & Accessories</h6>
-
-                        <p class="card-text"><small class="text-muted"><b>New</b></small></p>
-                        <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                          <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
-                          <div style="display: none;">
-                            <ul class="list-group custom-popover">
-                              <li class="list-group-item">Send Message</li>
-                              <li class="list-group-item">Add To Collection</li>
-                              <li class="list-group-item">More Details</li>
-                            </ul>
-                          </div>
-                        </div>
-                        <p class="text-muted pt-3"><b>$70</b></p>
-                        </div>
-                      </div>
-                    </div>
-                </div>
-
-              </div>
-            </div>
-
-            <!-- Shoe Category -->
-            <div class="category-icon pl-4 pb-4 pt-5"><i class='fas fa-shoe-prints fa-rotate-270 pr-3' style='font-size:20px;'></i> <span>Shoes</span> (Men, Women, Kids.)</div>
-            <div class="carousel-wrapper">
-              <div class="carousel cat-carousel" data-flickity='{ "pageDots": false, "freeScroll": true, "contain": true, "watchCSS": true }'>
-
-                <!-- Item 1 -->
-                <div class="cat-carousel-cell item1">
-                  <div class="card rounded-0">
-                    <img src="./images/1.jpg" style="width: 100%; height: auto;" alt="Product Image" />
-                    <div class="card-body">
-                      <h6 class="card-title">Open Toe High Heel</h6>
-
-                      <p class="card-text"><small class="text-muted"><b>New</b></small></p>
-                      <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
-                        <div style="display: none;">
-                          <ul class="list-group custom-popover">
-                            <li class="list-group-item">Send Message</li>
-                            <li class="list-group-item">Add To Collection</li>
-                            <li class="list-group-item">More Details</li>
-                          </ul>
-                        </div>
-                      </div>
-                      <p class="text-muted pt-3"><b>$70</b></p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Item 2 -->
-                <div class="cat-carousel-cell item2">
-                  <div class="card rounded-0">
-                    <img src="./images/2.jpg" style="width: 100%; height: auto;" alt="Product Image" />
-                    <div class="card-body">
-                      <h6 class="card-title">Men's Leather Shoe</h6>
-
-                      <p class="card-text"><small class="text-muted"><b>New</b></small></p>
-                      <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
-                        <div style="display: none;">
-                          <ul class="list-group custom-popover">
-                            <li class="list-group-item">Send Message</li>
-                            <li class="list-group-item">Add To Collection</li>
-                            <li class="list-group-item">More Details</li>
-                          </ul>
-                        </div>
-                      </div>
-                      <p class="text-muted pt-3"><b>$70</b></p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Item 3 -->
-                <div class="cat-carousel-cell item3">
-                  <div class="card rounded-0">
-                    <img src="./images/3.jpg"  style="width: 100%; height: auto;" alt="Product Image"/>
-                    <div class="card-body">
-                      <h6 class="card-title">Men's Leather Shoe</h6>
-
-                      <p class="card-text"><small class="text-muted"><b>New</b></small></p>
-                      <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
-                        <div style="display: none;">
-                          <ul class="list-group custom-popover">
-                            <li class="list-group-item">Send Message</li>
-                            <li class="list-group-item">Add To Collection</li>
-                            <li class="list-group-item">More Details</li>
-                          </ul>
-                        </div>
-                      </div>
-                      <p class="text-muted pt-3"><b>$70</b></p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Item 4 -->
-                <div class="cat-carousel-cell item4">
-                  <div class="card rounded-0">
-                    <img src="./images/16.jpg"  style="width: 100%; height: auto;" alt="Product Image"/>
-                    <div class="card-body">
-                      <h6 class="card-title">Nike Air Sneakers</h6>
-
-                      <p class="card-text"><small class="text-muted"><b>New</b></small></p>
-                      <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
-                        <div style="display: none;">
-                          <ul class="list-group custom-popover">
-                            <li class="list-group-item">Send Message</li>
-                            <li class="list-group-item">Add To Collection</li>
-                            <li class="list-group-item">More Details</li>
-                          </ul>
-                        </div>
-                      </div>
-                      <p class="text-muted pt-3"><b>$70</b></p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Item 5 -->
-                <div class="cat-carousel-cell item5">
-                  <div class="card rounded-0">
-                    <img src="./images/20.jpg"  style="width: 100%; height: auto;" alt="Product Image"/>
-                    <div class="card-body">
-                      <h6 class="card-title">Converse Sneakers</h6>
-
-                      <p class="card-text"><small class="text-muted"><b>New</b></small></p>
-                      <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
-                        <div style="display: none;">
-                          <ul class="list-group custom-popover">
-                            <li class="list-group-item">Send Message</li>
-                            <li class="list-group-item">Add To Collection</li>
-                            <li class="list-group-item">More Details</li>
-                          </ul>
-                        </div>
-                      </div>
-                      <p class="text-muted pt-3"><b>$70</b></p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Item 6 -->
-                <div class="cat-carousel-cell item6">
-                  <div class="card rounded-0">
-                    <img src="./images/21.jpg"  style="width: 100%; height: auto;" alt="Product Image"/>
-                    <div class="card-body">
-                      <h6 class="card-title">Baby Bootees</h6>
-
-                      <p class="card-text"><small class="text-muted"><b>New</b></small></p>
-                      <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
-                        <div style="display: none;">
-                          <ul class="list-group custom-popover">
-                            <li class="list-group-item">Send Message</li>
-                            <li class="list-group-item">Add To Collection</li>
-                            <li class="list-group-item">More Details</li>
-                          </ul>
-                        </div>
-                      </div>
-                      <p class="text-muted pt-3"><b>$70</b></p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Item 7 -->
-                <div class="cat-carousel-cell item6">
-                  <div class="card rounded-0">
-                    <img src="./images/22.jpg"  style="width: 100%; height: auto;" alt="Product Image"/>
-                    <div class="card-body">
-                      <h6 class="card-title">Men Boots</h6>
-
-                      <p class="card-text"><small class="text-muted"><b>New</b></small></p>
-                      <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
-                        <div style="display: none;">
-                          <ul class="list-group custom-popover">
-                            <li class="list-group-item">Send Message</li>
-                            <li class="list-group-item">Add To Collection</li>
-                            <li class="list-group-item">More Details</li>
-                          </ul>
-                        </div>
-                      </div>
-                      <p class="text-muted pt-3"><b>$70</b></p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Item 8 -->
-                <div class="cat-carousel-cell item6">
-                    <div class="card rounded-0">
-                      <img src="./images/23.jpg"  style="width: 100%; height: auto;" alt="Product Image"/>
-                      <div class="card-body">
-                        <h6 class="card-title">Chelsea Brown Boots</h6>
-
-                        <p class="card-text"><small class="text-muted"><b>New</b></small></p>
-                        <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                          <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
-                          <div style="display: none;">
-                            <ul class="list-group custom-popover">
-                              <li class="list-group-item">Send Message</li>
-                              <li class="list-group-item">Add To Collection</li>
-                              <li class="list-group-item">More Details</li>
-                            </ul>
-                          </div>
-                        </div>
-                        <p class="text-muted pt-3"><b>$70</b></p>
-                        </div>
-                      </div>
-                    </div>
-                </div>
-
-                <!-- Item 9 -->
-                <div class="cat-carousel-cell item6">
-                    <div class="card rounded-0">
-                      <img src="./images/24.jpg"  style="width: 100%; height: auto;" alt="Product Image"/>
-                      <div class="card-body">
-                        <h6 class="card-title">Black Boots</h6>
-
-                        <p class="card-text"><small class="text-muted"><b>New</b></small></p>
-                        <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                          <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
-                          <div style="display: none;">
-                            <ul class="list-group custom-popover">
-                              <li class="list-group-item">Send Message</li>
-                              <li class="list-group-item">Add To Collection</li>
-                              <li class="list-group-item">More Details</li>
-                            </ul>
-                          </div>
-                        </div>
-                        <p class="text-muted pt-3"><b>$70</b></p>
-                        </div>
-                      </div>
-                    </div>
-                </div>
-
-                <!-- Item 10 -->
-                <div class="cat-carousel-cell item6">
-                    <div class="card rounded-0">
-                      <img src="./images/25.jpg"  style="width: 100%; height: auto;" alt="Product Image"/>
-                      <div class="card-body">
-                        <h6 class="card-title">Nike Air Force Special</h6>
-
-                        <p class="card-text"><small class="text-muted"><b>New</b></small></p>
-                        <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                          <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
-                          <div style="display: none;">
-                            <ul class="list-group custom-popover">
-                              <li class="list-group-item">Send Message</li>
-                              <li class="list-group-item">Add To Collection</li>
-                              <li class="list-group-item">More Details</li>
-                            </ul>
-                          </div>
-                        </div>
-                        <p class="text-muted pt-3"><b>$70</b></p>
-                        </div>
-                      </div>
-                    </div>
-                </div>
-
-                <!-- Item 11 -->
-                <div class="cat-carousel-cell item6">
-                    <div class="card rounded-0" style="height: auto;">
-                      <img src="./images/26.jpg"  style="width: 100%; height: auto;" alt="Product Image"/>
-                      <div class="card-body">
-                        <h6 class="card-title">Ladies Suede Heel</h6>
-
-                        <p class="card-text"><small class="text-muted"><b>New</b></small></p>
-                        <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                          <button type="button" class="btn btn-sm btn-outline-secondary" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
-                          <div style="display: none;">
-                            <ul class="list-group custom-popover">
-                              <li class="list-group-item">Send Message</li>
-                              <li class="list-group-item">Add To Collection</li>
-                              <li class="list-group-item">More Details</li>
-                            </ul>
-                          </div>
-                        </div>
-                        <p class="text-muted pt-3"><b>$70</b></p>
-                        </div>
-                      </div>
-                    </div>
-                </div>
-
-              </div>
             </div>
 
         </div>
 
+        <!-- Fashion Category -->
+        <div class="category-icon pl-4 pb-2 pt-5"><i class='fas fa-tshirt pr-3' style='font-size:20px;'></i> <span class="product-category pr-3">Fashion</span> (Skirts, Gowns, Pants, Accessories, Shirts.) <span class="more-right">View All</span></div>
+        <hr>
+        <div class="container cat-container">
+
+            <div class="slider">
+
+                        <div class="card rounded-0" style="height: 370px;">
+                            <img class="card-img-top rounded-0" src="./images/14.jpg" alt="Card image cap"  style="width: 100%; height: auto;">
+                            <div class="card-body">
+                              <h5 class="card-title">Set For Men (White Shirt + Belt + Pant)</h5>
+                              <p class="card-text">New</p>
+                              <small>From: </small><span class="location">San Francisco, US</span>
+                              <div class="d-flex justify-content-between pt-3">
+
+                                <div class="btn-group">
+                                  <button type="button" class="btn btn-default rounded-0 border" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
+
+                                  <div style="display: none;">
+                                    <ul class="list-group custom-popover">
+                                      <li class="list-group-item">Send Message</li>
+                                      <li class="list-group-item">Add To Collection</li>
+                                      <li class="list-group-item">More Details</li>
+                                    </ul>
+                                  </div>
+                                </div>
+
+                                <p class="text-muted pt-3"><b>$70</b></p>
+                              </div>
+
+                            </div>
+                        </div>
+
+                        <div class="card rounded-0" style="height: 370px;">
+                            <img class="card-img-top rounded-0" src="./images/15.jpg" alt="Card image cap"  style="width: 100%; height: auto;">
+                            <div class="card-body">
+                              <h5 class="card-title">Smart Stock Jeans For Women</h5>
+                              <p class="card-text">New</p>
+                              <small>From: </small><span class="location">San Francisco, US</span>
+                              <div class="d-flex justify-content-between pt-3">
+
+                                <div class="btn-group">
+                                  <button type="button" class="btn btn-default rounded-0 border" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
+
+                                  <div style="display: none;">
+                                    <ul class="list-group custom-popover">
+                                      <li class="list-group-item">Send Message</li>
+                                      <li class="list-group-item">Add To Collection</li>
+                                      <li class="list-group-item">More Details</li>
+                                    </ul>
+                                  </div>
+                                </div>
+
+                                <p class="text-muted pt-3"><b>$70</b></p>
+                              </div>
+
+                            </div>
+                        </div>
+
+                        <div class="card rounded-0" style="height: 370px;">
+                            <img class="card-img-top rounded-0" src="./images/17.jpg" alt="Card image cap"  style="width: 100%; height: auto;">
+                            <div class="card-body">
+                              <h5 class="card-title">Black Eye Clear Lens Glasses</h5>
+                              <p class="card-text">New</p>
+                              <small>From: </small><span class="location">San Francisco, US</span>
+                              <div class="d-flex justify-content-between pt-3">
+
+                                <div class="btn-group">
+                                  <button type="button" class="btn btn-default rounded-0 border" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
+
+                                  <div style="display: none;">
+                                    <ul class="list-group custom-popover">
+                                      <li class="list-group-item">Send Message</li>
+                                      <li class="list-group-item">Add To Collection</li>
+                                      <li class="list-group-item">More Details</li>
+                                    </ul>
+                                  </div>
+                                </div>
+
+                                <p class="text-muted pt-3"><b>$70</b></p>
+                              </div>
+
+                            </div>
+                        </div>
+
+                        <div class="card rounded-0" style="height: 370px;">
+                            <img class="card-img-top rounded-0" src="./images/4.jpg" alt="Card image cap"  style="width: 100%; height: auto;">
+                            <div class="card-body">
+                              <h5 class="card-title">Leather Small Bag One Shoulder Black</h5>
+                              <p class="card-text">New</p>
+                              <small>From: </small><span class="location">San Francisco, US</span>
+                              <div class="d-flex justify-content-between pt-3">
+
+                                <div class="btn-group">
+                                  <button type="button" class="btn btn-default rounded-0 border" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
+
+                                  <div style="display: none;">
+                                    <ul class="list-group custom-popover">
+                                      <li class="list-group-item">Send Message</li>
+                                      <li class="list-group-item">Add To Collection</li>
+                                      <li class="list-group-item">More Details</li>
+                                    </ul>
+                                  </div>
+                                </div>
+
+                                <p class="text-muted pt-3"><b>$70</b></p>
+                              </div>
+
+                            </div>
+                        </div>
+
+                        <div class="card rounded-0" style="height: 370px;">
+                            <img class="card-img-top rounded-0" src="./images/7.jpg" alt="Card image cap"  style="width: 100%; height: auto;">
+                            <div class="card-body">
+                              <h5 class="card-title">Fashionable Striped Shirt For Men</h5>
+                              <p class="card-text">New</p>
+                              <small>From: </small><span class="location">San Francisco, US</span>
+                              <div class="d-flex justify-content-between pt-3">
+
+                                <div class="btn-group">
+                                  <button type="button" class="btn btn-default rounded-0 border" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
+
+                                  <div style="display: none;">
+                                    <ul class="list-group custom-popover">
+                                      <li class="list-group-item">Send Message</li>
+                                      <li class="list-group-item">Add To Collection</li>
+                                      <li class="list-group-item">More Details</li>
+                                    </ul>
+                                  </div>
+                                </div>
+
+                                <p class="text-muted pt-3"><b>$70</b></p>
+                              </div>
+
+                            </div>
+                        </div>
+
+                        <div class="card rounded-0" style="height: 370px;">
+                            <img class="card-img-top rounded-0" src="./images/8.jpg" alt="Card image cap"  style="width: 100%; height: auto;">
+                            <div class="card-body">
+                              <h5 class="card-title">Floral Print Boho Casual Party Dress</h5>
+                              <p class="card-text">New</p>
+                              <small>From: </small><span class="location">San Francisco, US</span>
+                              <div class="d-flex justify-content-between pt-3">
+
+                                <div class="btn-group">
+                                  <button type="button" class="btn btn-default rounded-0 border" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
+
+                                  <div style="display: none;">
+                                    <ul class="list-group custom-popover">
+                                      <li class="list-group-item">Send Message</li>
+                                      <li class="list-group-item">Add To Collection</li>
+                                      <li class="list-group-item">More Details</li>
+                                    </ul>
+                                  </div>
+                                </div>
+
+                                <p class="text-muted pt-3"><b>$70</b></p>
+                              </div>
+
+                            </div>
+                        </div>
+
+                        <div class="card rounded-0" style="height: 370px;">
+                          <img class="card-img-top rounded-0" src="./images/9.jpg" alt="Card image cap"  style="width: 100%; height: auto;">
+                          <div class="card-body">
+                            <h5 class="card-title">Floral Print (Beach Casual Party Dress)</h5>
+                            <p class="card-text">New</p>
+                            <small>From: </small><span class="location">San Francisco, US</span>
+                            <div class="d-flex justify-content-between pt-3">
+
+                              <div class="btn-group">
+                                <button type="button" class="btn btn-default rounded-0 border" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
+
+                                <div style="display: none;">
+                                  <ul class="list-group custom-popover">
+                                    <li class="list-group-item">Send Message</li>
+                                    <li class="list-group-item">Add To Collection</li>
+                                    <li class="list-group-item">More Details</li>
+                                  </ul>
+                                </div>
+                              </div>
+
+                              <p class="text-muted pt-3"><b>$70</b></p>
+                            </div>
+
+                          </div>
+                        </div>
+
+                        <div class="card rounded-0" style="height: 370px;">
+                        <img class="card-img-top rounded-0" src="./images/10.jpg" alt="Card image cap"  style="width: 100%; height: auto;">
+                        <div class="card-body">
+                          <h5 class="card-title">Smart Men Royal Suit with Pants</h5>
+                          <p class="card-text">New</p>
+                          <small>From: </small><span class="location">San Francisco, US</span>
+                          <div class="d-flex justify-content-between pt-3">
+
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-default rounded-0 border" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
+
+                              <div style="display: none;">
+                                <ul class="list-group custom-popover">
+                                  <li class="list-group-item">Send Message</li>
+                                  <li class="list-group-item">Add To Collection</li>
+                                  <li class="list-group-item">More Details</li>
+                                </ul>
+                              </div>
+                            </div>
+
+                            <p class="text-muted pt-3"><b>$70</b></p>
+                          </div>
+
+                        </div>
+                        </div>
+
+                        <div class="card rounded-0" style="height: 370px;">
+                      <img class="card-img-top rounded-0" src="./images/12.jpg" alt="Card image cap"  style="width: 100%; height: auto;">
+                      <div class="card-body">
+                        <h5 class="card-title">Apple Series Smart Watch</h5>
+                        <p class="card-text">New</p>
+                        <small>From: </small><span class="location">San Francisco, US</span>
+                        <div class="d-flex justify-content-between pt-3">
+
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-default rounded-0 border" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
+
+                            <div style="display: none;">
+                              <ul class="list-group custom-popover">
+                                <li class="list-group-item">Send Message</li>
+                                <li class="list-group-item">Add To Collection</li>
+                                <li class="list-group-item">More Details</li>
+                              </ul>
+                            </div>
+                          </div>
+
+                          <p class="text-muted pt-3"><b>$70</b></p>
+                        </div>
+
+                      </div>
+                        </div>
+
+                        <div class="card rounded-0" style="height: 370px;">
+                    <img class="card-img-top rounded-0" src="./images/18.jpg" alt="Card image cap"  style="width: 100%; height: auto;">
+                    <div class="card-body">
+                      <h5 class="card-title">Portable Plaid Leather Handbag - Grey</h5>
+                      <p class="card-text">New</p>
+                      <small>From: </small><span class="location">San Francisco, US</span>
+                      <div class="d-flex justify-content-between pt-3">
+
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-default rounded-0 border" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
+
+                          <div style="display: none;">
+                            <ul class="list-group custom-popover">
+                              <li class="list-group-item">Send Message</li>
+                              <li class="list-group-item">Add To Collection</li>
+                              <li class="list-group-item">More Details</li>
+                            </ul>
+                          </div>
+                        </div>
+
+                        <p class="text-muted pt-3"><b>$70</b></p>
+                      </div>
+
+                    </div>
+                        </div>
+
+                        <div class="card rounded-0" style="height: 370px;">
+                  <img class="card-img-top rounded-0" src="./images/19.jpg" alt="Card image cap"  style="width: 100%; height: auto;">
+                  <div class="card-body">
+                    <h5 class="card-title">Colourful Kids Wear & Accessories</h5>
+                    <p class="card-text">New</p>
+                    <small>From: </small><span class="location">San Francisco, US</span>
+                    <div class="d-flex justify-content-between pt-3">
+
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-default rounded-0 border" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
+
+                        <div style="display: none;">
+                          <ul class="list-group custom-popover">
+                            <li class="list-group-item">Send Message</li>
+                            <li class="list-group-item">Add To Collection</li>
+                            <li class="list-group-item">More Details</li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <p class="text-muted pt-3"><b>$70</b></p>
+                    </div>
+
+                  </div>
+                        </div>
+            </div>
+
+        </div>
+
+        <!-- Shoes Category -->
+        <div class="category-icon pl-4 pb-2 pt-5"><i class='fas fa-shoe-prints fa-rotate-270 pr-3' style='font-size:20px;'></i> <span class="product-category pr-3">Shoes</span> (Men, Women, Kids.) <span class="more-right">View All</span></div>
+        <hr>
+        <div class="container cat-container pb-5">
+
+            <div class="slider">
+
+                  <div class="card rounded-0" style="height: 370px;">
+                            <img class="card-img-top rounded-0" src="./images/1.jpg" alt="Card image cap"  style="width: 100%; height: auto;">
+                            <div class="card-body">
+                              <h5 class="card-title">Open Toe High Heel</h5>
+                              <p class="card-text">New</p>
+                              <small>From: </small><span class="location">San Francisco, US</span>
+                              <div class="d-flex justify-content-between pt-3">
+
+                                <div class="btn-group">
+                                  <button type="button" class="btn btn-default rounded-0 border" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
+
+                                  <div style="display: none;">
+                                    <ul class="list-group custom-popover">
+                                      <li class="list-group-item">Send Message</li>
+                                      <li class="list-group-item">Add To Collection</li>
+                                      <li class="list-group-item">More Details</li>
+                                    </ul>
+                                  </div>
+                                </div>
+
+                                <p class="text-muted pt-3"><b>$70</b></p>
+                              </div>
+
+                            </div>
+                  </div>
+
+                  <div class="card rounded-0" style="height: 370px;">
+                            <img class="card-img-top rounded-0" src="./images/2.jpg" alt="Card image cap"  style="width: 100%; height: auto;">
+                            <div class="card-body">
+                              <h5 class="card-title">Men's Leather Shoe</h5>
+                              <p class="card-text">New</p>
+                              <small>From: </small><span class="location">San Francisco, US</span>
+                              <div class="d-flex justify-content-between pt-3">
+
+                                <div class="btn-group">
+                                  <button type="button" class="btn btn-default rounded-0 border" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
+
+                                  <div style="display: none;">
+                                    <ul class="list-group custom-popover">
+                                      <li class="list-group-item">Send Message</li>
+                                      <li class="list-group-item">Add To Collection</li>
+                                      <li class="list-group-item">More Details</li>
+                                    </ul>
+                                  </div>
+                                </div>
+
+                                <p class="text-muted pt-3"><b>$70</b></p>
+                              </div>
+
+                            </div>
+                  </div>
+
+                  <div class="card rounded-0" style="height: 370px;">
+                    <img class="card-img-top rounded-0" src="./images/3.jpg" alt="Card image cap"  style="width: 100%; height: auto;">
+                    <div class="card-body">
+                      <h5 class="card-title">Men's Leather Shoe</h5>
+                      <p class="card-text">New</p>
+                      <small>From: </small><span class="location">San Francisco, US</span>
+                      <div class="d-flex justify-content-between pt-3">
+
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-default rounded-0 border" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
+
+                          <div style="display: none;">
+                            <ul class="list-group custom-popover">
+                              <li class="list-group-item">Send Message</li>
+                              <li class="list-group-item">Add To Collection</li>
+                              <li class="list-group-item">More Details</li>
+                            </ul>
+                          </div>
+                        </div>
+
+                        <p class="text-muted pt-3"><b>$70</b></p>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="card rounded-0" style="height: 370px;">
+                            <img class="card-img-top rounded-0" src="./images/16.jpg" alt="Card image cap"  style="width: 100%; height: auto;">
+                            <div class="card-body">
+                              <h5 class="card-title">Nike Air Sneakers</h5>
+                              <p class="card-text">New</p>
+                              <small>From: </small><span class="location">San Francisco, US</span>
+                              <div class="d-flex justify-content-between pt-3">
+
+                                <div class="btn-group">
+                                  <button type="button" class="btn btn-default rounded-0 border" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
+
+                                  <div style="display: none;">
+                                    <ul class="list-group custom-popover">
+                                      <li class="list-group-item">Send Message</li>
+                                      <li class="list-group-item">Add To Collection</li>
+                                      <li class="list-group-item">More Details</li>
+                                    </ul>
+                                  </div>
+                                </div>
+
+                                <p class="text-muted pt-3"><b>$70</b></p>
+                              </div>
+
+                            </div>
+                  </div>
+
+                  <div class="card rounded-0" style="height: 370px;">
+                            <img class="card-img-top rounded-0" src="./images/20.jpg" alt="Card image cap"  style="width: 100%; height: auto;">
+                            <div class="card-body">
+                              <h5 class="card-title">Converse Sneakers</h5>
+                              <p class="card-text">New</p>
+                              <small>From: </small><span class="location">San Francisco, US</span>
+                              <div class="d-flex justify-content-between pt-3">
+
+                                <div class="btn-group">
+                                  <button type="button" class="btn btn-default rounded-0 border" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
+
+                                  <div style="display: none;">
+                                    <ul class="list-group custom-popover">
+                                      <li class="list-group-item">Send Message</li>
+                                      <li class="list-group-item">Add To Collection</li>
+                                      <li class="list-group-item">More Details</li>
+                                    </ul>
+                                  </div>
+                                </div>
+
+                                <p class="text-muted pt-3"><b>$70</b></p>
+                              </div>
+
+                            </div>
+                  </div>
+
+                  <div class="card rounded-0" style="height: 370px;">
+                            <img class="card-img-top rounded-0" src="./images/21.jpg" alt="Card image cap"  style="width: 100%; height: auto;">
+                            <div class="card-body">
+                              <h5 class="card-title">Baby Bootees</h5>
+                              <p class="card-text">New</p>
+                              <small>From: </small><span class="location">San Francisco, US</span>
+                              <div class="d-flex justify-content-between pt-3">
+
+                                <div class="btn-group">
+                                  <button type="button" class="btn btn-default rounded-0 border" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
+
+                                  <div style="display: none;">
+                                    <ul class="list-group custom-popover">
+                                      <li class="list-group-item">Send Message</li>
+                                      <li class="list-group-item">Add To Collection</li>
+                                      <li class="list-group-item">More Details</li>
+                                    </ul>
+                                  </div>
+                                </div>
+
+                                <p class="text-muted pt-3"><b>$70</b></p>
+                              </div>
+
+                            </div>
+                  </div>
+
+                  <div class="card rounded-0" style="height: 370px;">
+                          <img class="card-img-top rounded-0" src="./images/22.jpg" alt="Card image cap"  style="width: 100%; height: auto;">
+                          <div class="card-body">
+                            <h5 class="card-title">Men Boots</h5>
+                            <p class="card-text">New</p>
+                            <small>From: </small><span class="location">San Francisco, US</span>
+                            <div class="d-flex justify-content-between pt-3">
+
+                              <div class="btn-group">
+                                <button type="button" class="btn btn-default rounded-0 border" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
+
+                                <div style="display: none;">
+                                  <ul class="list-group custom-popover">
+                                    <li class="list-group-item">Send Message</li>
+                                    <li class="list-group-item">Add To Collection</li>
+                                    <li class="list-group-item">More Details</li>
+                                  </ul>
+                                </div>
+                              </div>
+
+                              <p class="text-muted pt-3"><b>$70</b></p>
+                            </div>
+
+                          </div>
+                  </div>
+
+                  <div class="card rounded-0" style="height: 370px;">
+                        <img class="card-img-top rounded-0" src="./images/23.jpg" alt="Card image cap"  style="width: 100%; height: auto;">
+                        <div class="card-body">
+                          <h5 class="card-title">Chelsea Brown Boots</h5>
+                          <p class="card-text">New</p>
+                          <small>From: </small><span class="location">San Francisco, US</span>
+                          <div class="d-flex justify-content-between pt-3">
+
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-default rounded-0 border" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
+
+                              <div style="display: none;">
+                                <ul class="list-group custom-popover">
+                                  <li class="list-group-item">Send Message</li>
+                                  <li class="list-group-item">Add To Collection</li>
+                                  <li class="list-group-item">More Details</li>
+                                </ul>
+                              </div>
+                            </div>
+
+                            <p class="text-muted pt-3"><b>$70</b></p>
+                          </div>
+
+                        </div>
+                  </div>
+
+                  <div class="card rounded-0" style="height: 370px;">
+                      <img class="card-img-top rounded-0" src="./images/24.jpg" alt="Card image cap"  style="width: 100%; height: auto;">
+                      <div class="card-body">
+                        <h5 class="card-title">Black Boots</h5>
+                        <p class="card-text">New</p>
+                        <small>From: </small><span class="location">San Francisco, US</span>
+                        <div class="d-flex justify-content-between pt-3">
+
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-default rounded-0 border" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
+
+                            <div style="display: none;">
+                              <ul class="list-group custom-popover">
+                                <li class="list-group-item">Send Message</li>
+                                <li class="list-group-item">Add To Collection</li>
+                                <li class="list-group-item">More Details</li>
+                              </ul>
+                            </div>
+                          </div>
+
+                          <p class="text-muted pt-3"><b>$70</b></p>
+                        </div>
+
+                      </div>
+                  </div>
+
+                  <div class="card rounded-0" style="height: 370px;">
+                    <img class="card-img-top rounded-0" src="./images/25.jpg" alt="Card image cap"  style="width: 100%; height: auto;">
+                    <div class="card-body">
+                      <h5 class="card-title">Nike Air Force Special</h5>
+                      <p class="card-text">New</p>
+                      <small>From: </small><span class="location">San Francisco, US</span>
+                      <div class="d-flex justify-content-between pt-3">
+
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-default rounded-0 border" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
+
+                          <div style="display: none;">
+                            <ul class="list-group custom-popover">
+                              <li class="list-group-item">Send Message</li>
+                              <li class="list-group-item">Add To Collection</li>
+                              <li class="list-group-item">More Details</li>
+                            </ul>
+                          </div>
+                        </div>
+
+                        <p class="text-muted pt-3"><b>$70</b></p>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="card rounded-0" style="height: 370px;">
+                    <img class="card-img-top rounded-0" src="./images/26.jpg" alt="Card image cap"  style="width: 100%; height: auto;">
+                    <div class="card-body">
+                      <h5 class="card-title">Ladies Suede Heel</h5>
+                      <p class="card-text">New</p>
+                      <small>From: </small><span class="location">San Francisco, US</span>
+                      <div class="d-flex justify-content-between pt-3">
+
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-default rounded-0 border" data-container="body" data-toggle="popover"  data-placement="top" data-content=''>+</button>
+
+                          <div id="popover-content" style="display: none;">
+                            <ul class="list-group custom-popover">
+                              <li class="list-group-item">Send Message</li>
+                              <li class="list-group-item">Add To Collection</li>
+                              <li class="list-group-item">More Details</li>
+                            </ul>
+                          </div>
+                        </div>
+
+                        <p class="text-muted pt-3"><b>$70</b></p>
+                      </div>
+
+                    </div>
+                  </div>
+            </div>
+
+        </div>
+      </div>
+      <!-- Product Category -->
     </main>
 
-    <!-- Site footer -->
+    <!-- Footer Section -->
     <footer class="site-footer border-top">
-        <div class="container">
-          <div class="row">
+      <div class="container">
+        <div class="row">
 
-            <div class="col-sm-12 col-md-6 about-content">
-              <h6 class="text-center">About</h6>
-              <p class="text-justify pt-1">
-                <i>Splendid</i> is Nigeria's Biggest Online Mall that offers offers the widest assortment at an unbeatable price,
-                here you can buy anything you want online at the Best Prices.
-                Search, Order on our Platform,
-                Pay on Delivery.
-                You can Access 100% Genuine Products from Local &
-                International Vendors.</p>
-            </div>
-
-            <div class="col-xs-6 col-md-3 category-content">
-              <h6>Categories</h6>
-              <hr>
-              <ul class="footer-links">
-                <li><a href="#">Accessories</a></li>
-                <li><a href="#">Men</a></li>
-                <li><a href="#">Women</a></li>
-                <li><a href="#">Kids</a></li>
-                <li><a href="#">Shoes</a></li>
-                <li><a href="#">Decorations</a></li>
-              </ul>
-            </div>
-
-            <div class="col-xs-6 col-md-3 navigation-content">
-              <h6>Navigation</h6>
-              <hr>
-              <ul class="footer-links">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Login</a></li>
-                <li><a href="#">Terms & Conditions</a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Register</a></li>
-              </ul>
-            </div>
-
+          <div class="col-sm-12 col-md-6 about-content">
+            <h6 class="text-center">About</h6>
+            <p class="text-justify pt-1">
+              <i>Splendid</i> is Nigeria's Biggest Online Mall that offers offers the widest assortment at an unbeatable price,
+              here you can buy anything you want online at the Best Prices.
+              Search, Order on our Platform,
+              Pay on Delivery.
+              You can Access 100% Genuine Products from Local &
+              International Vendors.</p>
           </div>
 
-          <hr>
+          <div class="col-xs-6 col-md-3 category-content">
+            <h6>Categories</h6>
+            <hr>
+            <ul class="footer-links">
+              <li><a href="#">Accessories</a></li>
+              <li><a href="#">Men</a></li>
+              <li><a href="#">Women</a></li>
+              <li><a href="#">Kids</a></li>
+              <li><a href="#">Shoes</a></li>
+              <li><a href="#">Decorations</a></li>
+            </ul>
+          </div>
 
-        </div>
-
-        <div class="container">
-
-          <div class="row">
-            <div class="col-md-8 col-sm-6 col-xs-12">
-              <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by
-                    <a href="#">Splendid</a>.
-              </p>
-            </div>
-
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <ul class="social-icons">
-                    <li><a class="facebook" href="#"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a class="twitter" href="#"><i class="fab fa-twitter"></i></a></li>
-                    <li><a class="dribbble" href="#"><i class="fab fa-dribbble"></i></a></li>
-                    <li><a class="linkedin" href="#"><i class="fab fa-linkedin-in"></i></a></li>
-              </ul>
-            </div>
+          <div class="col-xs-6 col-md-3 navigation-content">
+            <h6>Navigation</h6>
+            <hr>
+            <ul class="footer-links">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Login</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Register</a></li>
+            </ul>
           </div>
 
         </div>
+
+        <hr>
+
+      </div>
+
+      <div class="container">
+
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by
+                  <a href="#">Splendid</a>.
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+              <ul class="social-icons">
+                  <li><a class="facebook" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a class="twitter" href="#"><i class="fab fa-twitter"></i></a></li>
+                  <li><a class="dribbble" href="#"><i class="fab fa-dribbble"></i></a></li>
+                  <li><a class="linkedin" href="#"><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
 
     </footer>
+    <!-- Footer Section -->
 
-
-    <!-- JavaScript -->
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <!-- Bootstrap JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Other JS -->
     <script src="./js/index.js"></script>
+    <script type="text/javascript">
+      document.getElementById("btn-search").onclick = function () {
+          location.href = "search.html";
+      };
+  </script>
 </body>
 </html>

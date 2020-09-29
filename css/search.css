@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@900&display=swap');
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 /* Navigation Section */
 .navbar-brand {
   font-family: 'Cinzel Decorative', cursive;
@@ -55,6 +51,22 @@ a:active {
   transition: all 0.2s linear;
 }
 
+.page-item a {
+  height: 34px;
+  color: #383838;
+  font-weight: bold;
+}
+
+.ellipsis a {
+  color: black;
+  pointer-events: none;
+}
+
+.bg-gray,
+.ellipsis a {
+  background-color: #e9ecef;
+}
+
 .footer-links a,
 .site-footer a,
 .mr-auto li a {
@@ -70,19 +82,21 @@ a:active {
 /* End Navigation Section */
 
 /* Jumbotron Section */
+
 .jumbotron {
   background-color: #d35266;
-  height: 300px;
+  height: 280px;
 }
 
 .container h1 {
   font-weight: bold;
   font-family: 'Cinzel Decorative', cursive;
+  font-size: 32px;
 }
 
 .jumbotron-uppercase,
-.ad-btn,
-.lead {
+.lead,
+.ad-btn {
   color: #fff;
 }
 
@@ -97,6 +111,10 @@ a:active {
   padding-top: 15px;
   padding-right: 30px;
   padding-left: 30px;
+}
+
+.rm-pt {
+  padding-top: 10px;
 }
 
 .btn-cat {
@@ -127,48 +145,42 @@ input::placeholder {
 
 /*  End Jumbotron Section */
 
-/*  Product Category */
-.slick-prev::before,
-.slick-next::before {
-  color: red !important;
+.mb-4 hr {
+  width: 95%;
 }
 
-.slick-slide {
-  margin: 0 6px;
-}
-
-.btn-group {
-  height: 39px;
-}
-
-.btn-group button {
-  color: #888;
-  font-weight: bold;
+.search-btn {
+  height: 35px;
   background-color: white;
 }
 
-.btn-group button:focus {
-  outline: none;
-  box-shadow: none;
-  background-color: #383838;
-  color: #d35266;
-}
-
-.text-muted b,
-.card-text,
-.more-right {
-  color: #d35266;
+.price-btn {
   font-weight: bold;
 }
 
-.location {
-  font-size: 14px;
+.mb-3 hr {
+  width: 100%;
 }
 
-.custom-popover li {
-  border: none !important;
+.page-item a:hover {
+  color: white;
+  background-color: #d35266;
 }
 
+.card-text {
+  color: #888;
+}
+
+.card-title {
+  color: #383838;
+}
+
+.card-text-button button {
+  background-color: #d35266;
+  color: white;
+}
+
+/*  Footer Section */
 .social-icons li {
   display: inline-block;
   margin-bottom: 4px;
@@ -176,14 +188,6 @@ input::placeholder {
 
 .footer-links li {
   display: block;
-}
-
-.custom-popover li:nth-child(2) {
-  border-top: 1px solid #ccc !important;
-}
-
-.custom-popover li:last-child {
-  border-top: 1px solid #ccc !important;
 }
 
 .footer-links.inline li {
@@ -195,39 +199,6 @@ input::placeholder {
   color: white;
 }
 
-.category-icon {
-  flex-direction: row;
-  color: #888;
-  font-size: 12px;
-}
-
-.more-right {
-  right: 40px;
-  position: absolute;
-  cursor: pointer;
-}
-
-.more-right,
-.product-category {
-  font-size: 16px !important;
-}
-
-.card-title {
-  font-size: 16px;
-}
-
-.category hr {
-  width: 96%;
-}
-
-.product-category {
-  color: #383838;
-  font-weight: bold;
-}
-
-/*  End Product Category */
-
-/*  Footer Section */
 .site-footer {
   padding: 45px 0 20px;
   font-size: 15px;
@@ -342,10 +313,6 @@ input::placeholder {
   background-color: #ea4c89;
 }
 
-.border-top {
-  padding-top: 40px;
-}
-
 /*  End Footer Section */
 
 /* Media Query For Various Screen Sizes */
@@ -369,6 +336,14 @@ input::placeholder {
     font-size: 8px;
   }
 
+  .col-12 {
+    padding-bottom: 200px;
+  }
+
+  .btn-group {
+    height: 35px;
+  }
+
   input::placeholder {
     font-size: 7px !important;
     padding-top: 0;
@@ -387,7 +362,7 @@ input::placeholder {
   }
 
   .jumbotron-uppercase {
-    font-size: 15px;
+    font-size: 12px;
   }
 
   .lead {
@@ -400,6 +375,10 @@ input::placeholder {
 
   .cat-container {
     padding-bottom: 10px;
+  }
+
+  .rm-pt {
+    padding-top: 5px;
   }
 }
 
@@ -418,7 +397,7 @@ input::placeholder {
     font-size: 13px;
   }
 
-  .jumbotron-uppercase {
+  .container h1 {
     font-size: 20px;
   }
 
