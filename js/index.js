@@ -13,6 +13,7 @@ $(document).ready(function() {
     });
 
     $('.slider').slick({
+      width : '1440px',
       centerMode: true,
       centerPadding: '20px',
       infinite: true,
