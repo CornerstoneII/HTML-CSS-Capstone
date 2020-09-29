@@ -17,11 +17,12 @@ $(document).ready(function() {
       centerPadding: '20px',
       infinite: true,
       arrows: true,
+      slidesToShow: 4,
       speed: 250,
       dots: false,
       responsive: [
           {
-          breakpoint: 1440,
+          breakpoint: 992,
           settings: {
               slidesToShow: 4,
           }
